@@ -1,5 +1,6 @@
 body {
   background: #fff repeat-x url(../img/body-pattern.png);
+  min-width: 937px;
   }
 .grid {
   max-width: 960px;
@@ -10,19 +11,21 @@ body {
   height: 534px;
   }
 #about {
-  background: #0971ce url(../img/content-pattern.png) repeat-x center top;
+  background: #0971ce url(../img/content-pattern-fade.png) repeat-x center top;
   min-height: 495px;
   color: #fff;
   font-family: Podkova;
   font-size: 20px;
   line-height: 26px;
+  padding-left: 20px;
+  }
+.content {
+  margin: 60px 0;
   }
 #about h2 {
-  color: #fff;
   font-size: 37px;
   font-family: 'League Gothic';
   text-transform: uppercase;
-  margin-top: 60px;
   margin-bottom: 10px;
   }
 #logo {
@@ -105,9 +108,6 @@ body {
   border-top: 2px solid #91c0eb;
   border-bottom: 2px solid #91c0eb;
   padding: 15px 0;
-  }
-#sign-up h2 {
-  margin-top: 0;
   }
 #sign-up input[type="submit"] {
   background: #91c0eb;
