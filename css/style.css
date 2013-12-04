@@ -1,0 +1,143 @@
+body {
+  background: #fff repeat-x url(../img/body-pattern.png);
+  }
+.grid {
+  max-width: 960px;
+  }
+#feature {
+  background: no-repeat center top url(../img/background.png);
+  border-bottom: 5px solid #054a86;
+  height: 534px;
+  }
+#about {
+  background: #0971ce url(../img/content-pattern.png) repeat-x center top;
+  min-height: 495px;
+  color: #fff;
+  font-family: Podkova;
+  font-size: 20px;
+  line-height: 26px;
+  }
+#about h2 {
+  color: #fff;
+  font-size: 37px;
+  font-family: 'League Gothic';
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  }
+#logo {
+  background: url(../img/logo.png) no-repeat 0 -10px;
+  height: 216px;
+  }
+#quote {
+  font-size: 2em;
+  font-family: Podkova;
+  line-height: 36px;
+  color: #303e48;
+  }
+.byline {
+  font-family: 'League Gothic';
+  font-size: 33px;
+  color: #0971ce;
+  text-transform: uppercase;
+  }
+#sidebar {
+  background: url(../img/ribbon.png) no-repeat;
+  min-height: 409px;
+  position: relative;
+  text-align: center;
+  }
+#contribute {
+  width: 301px;
+  height: 299px;
+  display: block;
+  text-indent: -9999em;
+  background: no-repeat url(../img/button.png);
+  position: absolute;
+  top: -150px;
+  left: 5px;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  }
+#contribute:hover {
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+  }
+#sign-up {
+  display: inline-block;
+  position: relative;
+  top: 165px;
+  border-top: 1px solid #91c0eb;
+  border-bottom: 1px solid #91c0eb;
+  }
+#sign-up > div {
+  margin: 3px 0;
+  border-top: 2px solid #91c0eb;
+  border-bottom: 2px solid #91c0eb;
+  padding: 15px 0;
+  }
+#sign-up h2 {
+  margin-top: 0;
+  }
+#sign-up input[type="submit"] {
+  background: #91c0eb;
+  border-radius: 0;
+  text-transform: uppercase;
+  color: #303e48;
+  font-family: Podkova;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0;
+  height: 48px;
+  -webkit-transition: background-color 0.4s, color 0.4s;
+  -moz-transition:    background-color 0.4s, color 0.4s;
+  -o-transition:      background-color 0.4s, color 0.4s;
+  transition:         background-color 0.4s, color 0.4s;
+  }
+#sign-up input[type="submit"]:hover {
+  color: #fff;
+  background-color: #00b3e3;
+  }
+#sign-up input[type="email"] {
+  border: none;
+  font-size: 14px;
+  padding: 14px;
+  color: #303e48;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  margin: 0;
+  }
+#footer {
+  background: url(../img/footer-pattern.png);
+  height: 116px;
+  text-align: center;
+  }
+#compliance {
+  color: #99a5ad;
+  font-family: 'League Gothic';
+  font-size: 20px;
+  border: 1px solid #99a5ad;
+  padding: 8px 10px;
+  display: inline-block;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  }
+#copyright {
+  font-family: Montserrat;
+  font-size: 11px;
+  color: #99a5ad;
+  text-transform: uppercase;
+  }
+@media only screen and (max-width:640px) {
+  #logo {
+    background-position: 50% -10px;
+    }
+}
