@@ -6,7 +6,7 @@ Campaign website
 
 - mobile reflow
 - retina images
-- optimize images
++ optimize images
 - connect donation form
 - connect email signup
 - xbrowse
