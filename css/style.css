@@ -35,6 +35,29 @@ body {
   line-height: 36px;
   color: #303e48;
   }
+#quote p {
+  position: relative;
+  }
+#quote p::before {
+  background: url(../img/open-quote.png);
+  display: block;
+  width: 42px;
+  height: 30px;
+  content: " ";
+  position: absolute;
+  left: -50px;
+  top: -10px;
+  }
+#quote p::after {
+  background: url(../img/close-quote.png);
+  display: inline-block;
+  width: 42px;
+  height: 30px;
+  content: " ";
+  position: relative;
+  left: 10px;
+  top: 15px;
+  }
 .byline {
   font-family: 'League Gothic';
   font-size: 33px;
