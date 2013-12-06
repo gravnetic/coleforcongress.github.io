@@ -9,9 +9,9 @@ var app = express();
 app.use(express.compress());
 app.use(express.bodyParser());
 app.use(function(req, res, next) {
-    if (req.host !== 'localhost' && req.protocol !== 'https') {
-        console.log(req.headers);
-        console.warn('not https!');
+    if (req.headers['x-forwarded-proto'] &&
+        req.headers['x-forwarded-proto'] !== 'https') {
+        res.redirect('https://' + req.headers.host + req.url);
     }
     next();
 });
