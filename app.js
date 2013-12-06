@@ -1,7 +1,9 @@
 var express = require('express');
 var app = express();
 
-app.get('/hello', function(req, res){
+app.use(express.static(__dirname + '/public'));
+
+app.get('/api', function(req, res){
     res.send('Hello World');
 });
 
