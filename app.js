@@ -1,10 +1,35 @@
+var stripe = require('stripe')(process.env.STRIPE_KEY);
+var mcapi = require('mailchimp-api');
 var express = require('express');
+
+var mc = new mcapi.Mailchimp(process.env.MAILCHIMP_KEY);
+
 var app = express();
 
+app.use(express.compress());
+app.use(express.bodyParser());
+app.use(function(req, res, next) {
+    if (req.host !== 'localhost' && req.protocol !== 'https') {
+        console.warn('not https!');
+    }
+    next();
+});
 app.use(express.static(__dirname + '/public'));
 
-app.get('/api', function(req, res){
-    res.send('Hello World');
+app.post('/form/contributions', function(req, res){
+    var token = req.body.stripeToken;
+
+    stripe.charges.create({
+        amount: 400,
+        currency: "usd",
+        card: token,
+        description: "Test charge"
+    }, function(err, data) {
+        console.log(err, data);
+    });
+
+    console.log(req.body);
+    res.send('Got it.');
 });
 
 app.listen(process.env.PORT || 3000);

@@ -4,11 +4,11 @@
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta charset=utf-8>
   <title>Dave Cole for Congress, New Jersey's 2nd District</title>
-  <link rel="shortcut icon" href="path/to/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link href="css/fonts.css" rel="stylesheet">
   <link href="css/base.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <script src="https://checkout.stripe.com/checkout.js"></script>
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 </head>
 <body>
   <div id="feature">
@@ -58,6 +58,64 @@
       <div class="header">
         <h2>Make a donation</h2>
       </div>
+      <form action="/form/contributions" method="POST" id="payment-form">
+        <span>SECURE</span>
+        <span class="payment-errors"></span>
+        <div class="form-page form-page-1">
+            <h3>Select an ammount:</h3>
+            <a href="#15">$15</a>
+            <a href="#35">$35</a>
+            <a href="#50">$50</a>
+            <a href="#100">$100</a>
+            <a href="#250">$250</a>
+            <a href="#50">$500</a>
+            <a href="#1000">$1,000</a>
+            <input type="text" id="other" placeholder="Other amount">
+            <input type="hidden" id="amount">
+            <a href="#next">Next</a>
+        </div>
+        <div class="form-page form-page-2">
+            <label for="fname"><span class="required">*</span>First Name</label>
+            <input type="text" id="fname">
+            <label for="lname"><span class="required">*</span>Last Name</label>
+            <input type="text" id="lname">
+            <label for="city"><span class="required">*</span>City</label>
+            <input type="text" id="city">
+
+            <!-- state dropdown :( -->
+
+            <label for="zip"><span class="required">*</span>ZIP</label>
+            <input type="text" id="zip">
+            <label for="email"><span class="required">*</span>Email</label>
+            <input type="text" id="email">
+            <label for="phone"><span class="required">*</span>Phone Number</label>
+            <input type="text" id="phone">
+            <label for="employer"><span class="required">*</span>Employer</label>
+            <input type="text" id="employer">
+            <label for="occupation"><span class="required">*</span>Occupation</label>
+            <input type="text" id="occupation">
+            <span>We need this info...</span>
+            <a href="#next">Next</a>
+        </div>
+        <div class="form-page form-page-3">
+            <div class="creditcards"></div>
+            <label>
+              <span>Card Number</span>
+              <input type="text" size="20" data-stripe="number"/>
+            </label>
+            <label>
+              <span>Expiration (MM/YYYY)</span>
+              <input type="text" size="2" data-stripe="exp-month"/>
+            </label>
+            <span> / </span>
+            <input type="text" size="4" data-stripe="exp-year"/>
+            <label>
+              <span>CVC Code</span>
+              <input type="text" size="4" data-stripe="cvc"/>
+            </label>
+            <input type="submit" value="Donate">
+        </div>
+      </form>
     </div>
   </div>
   <script src="js/lib/jquery.js"></script>
