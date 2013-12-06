@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Campaign website",
   "main": "app.js",
+  "engines": {
+    "node": "0.8.12"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
