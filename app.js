@@ -10,6 +10,7 @@ app.use(express.compress());
 app.use(express.bodyParser());
 app.use(function(req, res, next) {
     if (req.host !== 'localhost' && req.protocol !== 'https') {
+        console.log(req.headers);
         console.warn('not https!');
     }
     next();
