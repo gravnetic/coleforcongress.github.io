@@ -1,3 +1,6 @@
+body, h1, h2, h3, h4 {
+  color: #303e48;
+  }
 body {
   background: #fff repeat-x url(../img/body-pattern.png);
   min-width: 937px;
@@ -27,6 +30,7 @@ h2 {
   font-family: 'League Gothic';
   text-transform: uppercase;
   margin-bottom: 10px;
+  color: white;
   }
 #logo {
   background: url(../img/logo.png) no-repeat 0 -10px;
@@ -119,10 +123,10 @@ h2 {
   font-size: 20px;
   margin: 0;
   height: 48px;
-  -webkit-transition: background-color 0.4s, color 0.4s;
-  -moz-transition:    background-color 0.4s, color 0.4s;
-  -o-transition:      background-color 0.4s, color 0.4s;
-  transition:         background-color 0.4s, color 0.4s;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  -moz-transition:    background-color 0.2s, color 0.2s;
+  -o-transition:      background-color 0.2s, color 0.2s;
+  transition:         background-color 0.2s, color 0.2s;
   }
 #sign-up input[type="submit"]:hover {
   color: #fff;
@@ -161,11 +165,11 @@ h2 {
   }
 @media only screen and (max-width:640px) {
   #logo {
-    background-position: 50% -10px;
+/*     background-position: 50% -10px; */
     }
 }
 
-/* contribute */
+/* contribute button */
 
 #quote,
 #about > div {
@@ -180,12 +184,14 @@ body.contribute #quote,
 body.contribute #about > div {
   opacity: 0;
   }
+
+/* contribution form */
 #contribution-overlay {
   position: fixed;
   top: 100%;
   margin-left: 40px;
-  width: 37%;
-  height: 400px;
+  width: 474px;
+  min-height: 587px;
   background: white;
   opacity: 0;
   box-shadow: 0 0 10px 5px rgba(143, 143, 143, 0.15);
@@ -204,11 +210,158 @@ body.contribute #contribution-overlay {
   height: 116px;
   text-align: center;
   height: 155px;
-  border-bottom: 1px solid #d9e0e2;  
+  border-bottom: 1px solid #d9e0e2;
   }
 #contribution-overlay .header h2 {
   color: #0971ce;
   font-size: 47px;
   padding-top: 40px;
   letter-spacing: 1px;
+  }
+
+#payment-form {
+  }
+.form-page {
+/*   padding: 40px 32px 30px 32px; */
+  padding: 0 32px;
+  }
+.form-page h3 {
+  font-family: Podkova;
+  font-size: 24px;
+  margin: 0 10px;
+  margin-top: 40px;
+  }
+.form-page button,
+.form-page input[type="submit"] {
+  width: 116px;
+  height: 46px;
+  background: #91c0eb;
+  color: #303e48;
+  font-family: Podkova;
+  font-weight: 900;
+  font-size: 24px;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  -moz-transition:    background-color 0.2s, color 0.2s;
+  -o-transition:      background-color 0.2s, color 0.2s;
+  transition:         background-color 0.2s, color 0.2s;
+  margin: 20px 10px 0 10px;
+  text-transform: uppercase;
+  }
+.form-page input[type="submit"] {
+  width: 206px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 0;
+  }
+.form-page button:hover {
+  background-color: #00b3e3;
+  color: #fff;
+  }
+.form-page button.active {
+  background-color: #f93348;
+  color: white;
+  }
+.form-page input[type="submit"]:hover {
+  background-color: #f93348;
+  color: #fff;
+  }
+.form-page input[type="submit"].active {
+  background-color: #f93348;
+  color: white;
+  }
+
+.form-page input[type="text"] {
+  width: 252px;
+  height: 46px;
+  margin: 20px 0 0 10px;
+  font-size: 14px;
+  padding: 14px;
+  color: #303e48;
+  font-family: Montserrat;
+  border: 1px solid #c2cfd3;
+  }
+.form-page button.next {
+  width: 146px;
+  margin-top: 100px;
+  display: none;
+  }
+.form-page label > span {
+  font-family: Podkova;
+  font-weight: 900;
+  font-size: 16px;
+  display: block;
+  margin: 20px 10px 0px 10px;
+  }
+.form-page label > span .required {
+  color: #f93348;
+  }
+.form-page label input[type="text"] {
+  margin-top: 0;
+  }
+.form-page .field1 > input[type="text"] {
+  width: 388px;
+  }
+.form-page .field2 {
+  margin: 0 10px;
+  width: 182px;
+  display: inline-block;
+  vertical-align: top;
+  }
+.form-page .field2 > span,
+.form-page .field2 input[type="text"] {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  }
+.form-page .field4 {
+  margin: 0 10px;
+  width: 79px;
+  display: inline-block;
+  vertical-align: top;
+  }
+.form-page .field4 > span,
+.form-page .field4 input[type="text"] {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  }
+.creditcards {
+  height: 33px;
+  background: no-repeat url(../img/cc-icons.png) center center;
+  margin-top: 40px;
+  }
+.confirm-copy {
+  padding: 10px;
+  font-size: 11px;
+  font-family: Montserrat;
+  color: #81888a;
+  line-height: 20px;
+  }
+.confirm-copy ul,
+.confirm-copy li {
+  margin-left: 10px;
+  }
+.confirm-copy p {
+  margin-bottom: 10px;
+  }
+.payment-errors {
+  color: #f93348;
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 28px;
+  padding-bottom: 30px;
+  }
+#message .thanks {
+  position: absolute;
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+  text-align: center;
+  padding: 20px;
+  color: #f93348;
+  font-family: Podkova;
+  font-size: 26px;
+  display: none;
+  }
+body.thanks #message .thanks {
+  display: block;
   }

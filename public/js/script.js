@@ -1,12 +1,30 @@
 $(function() {
 
+    /* Stripe */
     Stripe.setPublishableKey('pk_test_oZNDQkoLhkuZj9inYl6GlR6M');
 
     $('#payment-form').submit(function(event) {
+        console.log('submit');
         var $form = $(this);
 
+        // All fields need a value
+        var valid = true;
+        $('input[type="text"]:not(.amount), select.state').each(function() {
+            if (!$(this).val()) valid = false;
+        });
+        if (!valid) {
+            $form.find('.payment-errors').text('Please fill out all fields.');
+            return false;
+        }
+        // contribution limits
+        if (+$('input[name="amount"]').val() > 5200 ||
+            +$('input[name="amount"]').val() < 1) {
+            $form.find('.payment-errors').text('Please enter an amount between $1 and $5,200.');
+            return false;
+        }
+
         // Disable the submit button to prevent repeated clicks
-        $form.find('button').prop('disabled', true);
+        $form.find('input[type="submit"]').prop('disabled', true);
 
         Stripe.card.createToken($form, stripeResponseHandler);
 
@@ -16,11 +34,11 @@ $(function() {
 
     var stripeResponseHandler = function(status, response) {
         var $form = $('#payment-form');
-    
+
         if (response.error) {
             // Show the errors on the form
             $form.find('.payment-errors').text(response.error.message);
-            $form.find('button').prop('disabled', false);
+            $form.find('input[type="submit"]').prop('disabled', false);
         } else {
             // token contains id, last4, and card type
             var token = response.id;
@@ -31,6 +49,7 @@ $(function() {
         }
     };
 
+    /* Contribute button */
     document.getElementById('contribute').addEventListener('click', function(e) {
         $('body').addClass('contribute');
         $('html,body').animate({ scrollTop: 0 }, 0.4 * 1000);
@@ -38,6 +57,40 @@ $(function() {
     });
 
     $(document).keyup(function(e) {
-        if (e.keyCode == 27) { $('body').removeClass('contribute'); }   // esc
+        if (e.keyCode == 27) { $('body').removeClass('contribute'); }  // esc
     });
+
+    /* Contribute form */
+    $('button.amount').click(setAmount);
+    $('input.amount').focus(setAmount);
+    $('input.amount').keyup(setAmount);
+    $('input[name="fname"], input[name="lname"]').keyup(setName);
+    function setAmount(e) {
+        $('button.amount, input.amount').toggleClass('active', false);
+        $(this).toggleClass('active');
+
+        var amount = $(this).val();
+        $('input[name="amount"]').val(amount);
+        if (amount) {
+            $('input[type="submit"]').val('Donate $' + amount);
+        } else {
+            $('input[type="submit"]').val('Donate');
+        }
+    }
+    function setName(e) {
+        var fname = $('input[name="fname"]').val();
+        var lname = $('input[name="lname"]').val();
+        $('input[name="name"]').val(fname + ' ' + lname);
+    }
+    $('input.cc-num').payment('formatCardNumber');
+    $('input.amount, input.exp, input.zip').payment('restrictNumeric');
+
+    /* Thank you message */
+    if (window.location.hash === '#confirmed') {
+        window.history.pushState(null, null, '#');
+        $('body').addClass('thanks');
+        setTimeout(function() {
+            $('body').removeClass('thanks');
+        }, 30000);
+    }
 });

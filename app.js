@@ -1,8 +1,7 @@
-var stripe = require('stripe')(process.env.STRIPE_KEY);
-var mcapi = require('mailchimp-api');
-var express = require('express');
+var thanksUrl = 'https://www.coleforcongress.com/staging.html#confirmed';
 
-var mc = new mcapi.Mailchimp(process.env.MAILCHIMP_KEY);
+var stripe = require('stripe')(process.env.STRIPE_KEY);
+var express = require('express');
 
 var app = express();
 
@@ -20,20 +19,36 @@ app.use(function(req, res, next) {
 });
 app.use(express.static(__dirname + '/public'));
 
-app.post('/form/contributions', function(req, res){
-    var token = req.body.stripeToken;
+app.post('/form/contributions', function(req, res) {
+    var b = req.body;
+    var token = b.stripeToken;
+    var metaData = {
+        fname: b.fname,
+        lname: b.lname,
+        phone: b.phone,
+        email: b.email,
+        employer: b.employer,
+        occupation: b.occupation
+    };
 
-    stripe.charges.create({
-        amount: 400,
-        currency: "usd",
+    stripe.customers.create({
+        description: 'Online contributor',
         card: token,
-        description: "Test charge"
-    }, function(err, data) {
-        console.log(err, data);
+        email: b.email,
+        metadata: metaData
+    }, function(err, customer) {
+        console.warn(err);
+        stripe.charges.create({
+            amount: b.amount * 100,
+            currency: 'usd',
+            customer: customer.id,
+            description: 'Online contribution',
+            metadata: metaData
+        }, function(err, data) {
+            console.warn(err);
+            res.redirect(thanksUrl);
+        });
     });
-
-    console.log(req.body);
-    res.send('Got it.');
 });
 
 app.listen(process.env.PORT || 3000);

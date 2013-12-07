@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=yes">
   <meta charset=utf-8>
   <title>Dave Cole for Congress, New Jersey's 2nd District</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -10,7 +10,12 @@
   <link href="css/style.css" rel="stylesheet">
   <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 </head>
-<body>
+<body class="">
+  <div id="message">
+    <div class="thanks">
+      Thanks for your generous contribution!
+    </div>
+  </div>
   <div id="feature">
     <div class="grid clearfix">
       <div id="logo" class="margin1 col11"></div>
@@ -58,67 +63,164 @@
       <div class="header">
         <h2>Make a donation</h2>
       </div>
-      <form action="/form/contributions" method="POST" id="payment-form">
-        <span>SECURE</span>
-        <span class="payment-errors"></span>
+      <form action="/form/contributions" method="POST" id="payment-form" novalidate="novalidate">
         <div class="form-page form-page-1">
-            <h3>Select an ammount:</h3>
-            <a href="#15">$15</a>
-            <a href="#35">$35</a>
-            <a href="#50">$50</a>
-            <a href="#100">$100</a>
-            <a href="#250">$250</a>
-            <a href="#50">$500</a>
-            <a href="#1000">$1,000</a>
-            <input type="text" id="other" placeholder="Other amount">
-            <input type="hidden" id="amount">
-            <a href="#next">Next</a>
+            <h3>Select an amount:</h3>
+            <button type="button" class="amount" value="15">$15</button><!--
+            --><button type="button" class="amount" value="35">$35</button><!--
+            --><button type="button" class="amount" value="50">$50</button><!--
+            --><button type="button" class="amount" value="100">$100</button><!--
+            --><button type="button" class="amount" value="250">$250</button><!--
+            --><button type="button" class="amount" value="50">$500</button><!--
+            --><button type="button" class="amount" value="1000">$1,000</button><!--
+            --><input type="text" class="amount" placeholder="OTHER AMOUNT" pattern="\d*" maxlength="4">
+            <input type="hidden" name="amount">
+            <div class="center">
+              <button type="button" class="next rcon">Next</button>
+            </div>
         </div>
         <div class="form-page form-page-2">
-            <label for="fname"><span class="required">*</span>First Name</label>
-            <input type="text" id="fname">
-            <label for="lname"><span class="required">*</span>Last Name</label>
-            <input type="text" id="lname">
-            <label for="city"><span class="required">*</span>City</label>
-            <input type="text" id="city">
-
-            <!-- state dropdown :( -->
-
-            <label for="zip"><span class="required">*</span>ZIP</label>
-            <input type="text" id="zip">
-            <label for="email"><span class="required">*</span>Email</label>
-            <input type="text" id="email">
-            <label for="phone"><span class="required">*</span>Phone Number</label>
-            <input type="text" id="phone">
-            <label for="employer"><span class="required">*</span>Employer</label>
-            <input type="text" id="employer">
-            <label for="occupation"><span class="required">*</span>Occupation</label>
-            <input type="text" id="occupation">
-            <span>We need this info...</span>
-            <a href="#next">Next</a>
+            <label class="field2 clearfix">
+              <span><span class="required">*</span>First Name</span>
+              <input type="text" name="fname">
+            </label>
+            <label class="field2 clearfix">
+              <span><span class="required">*</span>Last Name</span>
+              <input type="text" name="lname">
+            </label>
+            <input type="hidden" name="name" data-stripe="name">
+            <label class="field1 clearfix">
+              <span><span class="required">*</span>Address</span>
+              <input type="text" name="address" data-stripe="address_line1">
+            </label>
+            <label class="field2 clearfix">
+              <span><span class="required">*</span>City</span>
+              <input type="text" name="city" data-stripe="address_city">
+            </label>
+            <label class="field4 clearfix">
+              <span><span class="required">*</span>State</span>
+              <select class="state" name="state" data-stripe="address_state">
+                <option value="" selected="selected"></option>
+                <option value="AK">AK</option>
+                <option value="AL">AL</option>
+                <option value="AR">AR</option>
+                <option value="AZ">AZ</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DC">DC</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="IA">IA</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="MA">MA</option>
+                <option value="MD">MD</option>
+                <option value="ME">ME</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MO">MO</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="NE">NE</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NV">NV</option>
+                <option value="NY">NY</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VA">VA</option>
+                <option value="VT">VT</option>
+                <option value="WA">WA</option>
+                <option value="WI">WI</option>
+                <option value="WV">WV</option>
+                <option value="WY">WY</option>
+                <option value="AA">AA</option>
+                <option value="AE">AE</option>
+                <option value="AP">AP</option>
+                <option value="AS">AS</option>
+                <option value="FM">FM</option>
+                <option value="GU">GU</option>
+                <option value="MH">MH</option>
+                <option value="MP">MP</option>
+                <option value="PR">PR</option>
+                <option value="PW">PW</option>
+                <option value="VI">VI</option>
+              </select>
+            </label>
+            <label class="field4 clearfix">
+              <span><span class="required">*</span>ZIP</span>
+              <input type="text" class="zip" name="zip" pattern="\d*" maxlength="5" data-stripe="address_zip">
+            </label>
+            <label class="field2 clearfix">
+              <span><span class="required">*</span>Email</span>
+              <input type="text" name="email">
+            </label>
+            <label class="field2 clearfix">
+              <span><span class="required">*</span>Phone Number</span>
+              <input type="text" name="phone" pattern="\d*">
+            </label>
+            <label class="field2 clearfix">
+              <span><span class="required">*</span>Employer</span>
+              <input type="text" name="employer">
+            </label>
+            <label class="field2 clearfix">
+              <span><span class="required">*</span>Occupation</span>
+              <input type="text" name="occupation">
+            </label>
+            <button type="button" class="next">Next</button>
         </div>
         <div class="form-page form-page-3">
             <div class="creditcards"></div>
-            <label>
+            <label class="field1 clearfix">
               <span>Card Number</span>
-              <input type="text" size="20" data-stripe="number"/>
+              <input class="cc-num" type="text" data-stripe="number" pattern="\d*">
             </label>
-            <label>
-              <span>Expiration (MM/YYYY)</span>
-              <input type="text" size="2" data-stripe="exp-month"/>
+            <label class="field2 clearfix">
+              <span>Expiration (MM / YY)</span>
+              <input class="exp" type="text" data-stripe="exp-month" maxlength="2" pattern="\d*">
             </label>
-            <span> / </span>
-            <input type="text" size="4" data-stripe="exp-year"/>
-            <label>
-              <span>CVC Code</span>
-              <input type="text" size="4" data-stripe="cvc"/>
+            <label class="field2 clearfix">
+              <span>&nbsp;</span>
+              <input class="exp" type="text" data-stripe="exp-year" maxlength="2" pattern="\d*">
             </label>
-            <input type="submit" value="Donate">
+            <h3>Donation confirmation:</h3>
+            <div class="confirm-copy prose">
+              <p>By clicking the donate button below, I certify that I am making this contribution on a personal credit or debit card with my own personal funds — not those of another person or entity — and that I meet the eligibility requirements set forth below:</p>
+              <ul>
+                <li>I am not a foreign national.</li>
+                <li>I am not a federal contractor.</li>
+                <li>I am at least eighteen years old.</li>
+              </ul>
+            </div>
+
+            <div class="center">
+              <input type="submit" value="Donate">
+            </div>
+            <div class="payment-errors"></div>
         </div>
       </form>
     </div>
   </div>
   <script src="js/lib/jquery.js"></script>
+  <script src="js/lib/jquery.payment.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
