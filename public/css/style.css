@@ -118,6 +118,18 @@ h2 {
   position: relative;
   left: 2px;
   }
+#mc_embed_signup #mce-success-response {
+  color: #529214;
+  display: none;
+  background: white;
+  color: #303e48;
+  padding: 20px;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  width: 244px;
+  font-weight: normal;
+  }
 #mc_embed_signup form {
   padding: 0;
   }
@@ -151,7 +163,8 @@ h2 {
   color: #fff;
   background-color: #00b3e3;
   }
-#sign-up input[type="email"] {
+#sign-up input[type="text"] {
+  height: auto;
   border: none;
   font-size: 14px;
   padding: 14px;
