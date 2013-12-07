@@ -4,12 +4,11 @@ $(function() {
     Stripe.setPublishableKey('pk_live_2Hr2yN0PSWDpX8yAD8P6unAn');
 
     $('#payment-form').submit(function(event) {
-        console.log('submit');
         var $form = $(this);
 
         // All fields need a value
         var valid = true;
-        $('input[type="text"]:not(.amount), select.state').each(function() {
+        $('#payment-form input[type="text"]:not(.amount), #payment-form select.state').each(function() {
             if (!$(this).val()) valid = false;
         });
         if (!valid) {
