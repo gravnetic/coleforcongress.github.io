@@ -23,7 +23,7 @@ $(function() {
         }
 
         // Disable the submit button to prevent repeated clicks
-        $form.find('input[type="submit"]').prop('disabled', true);
+        //$('#donate-submit').prop('disabled', true);
 
         Stripe.card.createToken($form, stripeResponseHandler);
 
@@ -37,7 +37,7 @@ $(function() {
         if (response.error) {
             // Show the errors on the form
             $form.find('.payment-errors').text(response.error.message);
-            $form.find('input[type="submit"]').prop('disabled', false);
+            //$form.find('input[type="submit"]').prop('disabled', false);
         } else {
             // token contains id, last4, and card type
             var token = response.id;
