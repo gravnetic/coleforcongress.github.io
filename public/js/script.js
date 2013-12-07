@@ -1,7 +1,7 @@
 $(function() {
 
     /* Stripe */
-    Stripe.setPublishableKey('pk_test_oZNDQkoLhkuZj9inYl6GlR6M');
+    Stripe.setPublishableKey('pk_live_2Hr2yN0PSWDpX8yAD8P6unAn');
 
     $('#payment-form').submit(function(event) {
         console.log('submit');
