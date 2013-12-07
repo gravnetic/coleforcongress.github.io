@@ -1,4 +1,4 @@
-var thanksUrl = 'https://www.coleforcongress.com/staging.html#confirmed';
+var thanksUrl = 'https://www.coleforcongress.com/#confirmed';
 
 var stripe = require('stripe')(process.env.STRIPE_KEY);
 var express = require('express');
