@@ -9,9 +9,12 @@ var app = express();
 app.use(express.compress());
 app.use(express.bodyParser());
 app.use(function(req, res, next) {
+    var host = req.headers.host;
+    host = (host.substr(0, 4) !== 'www.') ? 'www.' + host : host;
+
     if (req.headers['x-forwarded-proto'] &&
         req.headers['x-forwarded-proto'] !== 'https') {
-        res.redirect('https://' + req.headers.host + req.url);
+        res.redirect(301, 'https://' + host + req.url);
     }
     next();
 });
