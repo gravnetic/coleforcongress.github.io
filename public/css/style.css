@@ -113,6 +113,25 @@ h2 {
   border-bottom: 2px solid #91c0eb;
   padding: 15px 0;
   }
+#mc_embed_signup {
+  width: 246px;
+  position: relative;
+  left: 2px;
+  }
+#mc_embed_signup form {
+  padding: 0;
+  }
+#mc_embed_signup input {
+  border: 0;
+  }
+
+#mc-embedded-subscribe {
+  clear: none;
+  width: auto;
+  display: inline-block;
+  margin: 0;
+  border: none;
+  }
 #sign-up input[type="submit"] {
   background: #91c0eb;
   border-radius: 0;
