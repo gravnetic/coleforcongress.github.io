@@ -35,6 +35,8 @@ h2 {
 #logo {
   background: url(../img/logo.png) no-repeat 0 -10px;
   height: 216px;
+  width: 420px;
+  clear: both;
   }
 #quote {
   font-size: 2em;

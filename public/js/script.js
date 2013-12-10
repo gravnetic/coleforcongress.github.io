@@ -59,6 +59,11 @@ $(function() {
         if (e.keyCode == 27) { $('body').removeClass('contribute'); }  // esc
     });
 
+    $('#logo').click(function(e) {
+        $('body').removeClass('contribute');
+        e.preventDefault();
+    });
+
     /* Contribute form */
     $('button.amount').click(setAmount);
     $('input.amount').focus(setAmount);
@@ -71,9 +76,9 @@ $(function() {
         var amount = $(this).val();
         $('input[name="amount"]').val(amount);
         if (amount) {
-            $('input[type="submit"]').val('Donate $' + amount);
+            $('#payment-form input[type="submit"]').val('Donate $' + amount);
         } else {
-            $('input[type="submit"]').val('Donate');
+            $('#payment-form input[type="submit"]').val('Donate');
         }
     }
     function setName(e) {
