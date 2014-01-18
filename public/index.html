@@ -36,7 +36,7 @@
 
           <p>After Dave and his team worked diligently to establish themselves in a crowded market and create jobs in the new tech economy, MapBox secured a venture capital investment of $10 million in October 2013, cementing the company’s path to long-term stability.</p>
 
-          <p>The hard work and determination that made Dave successful in business are values he learned in New Jersey. Dave’s father — a Navy veteran who set up his own business as a carpenter and later worked as a union electrical worker — earned a reputation for going out of his way to get the job done right. Dave would often work side-by-side with his dad after school and over the summers, learning the meaning of hard work and treating people fairly. Dave’s mother brought up Dave and his sister to be conscientious citizens who believed in family and service. An entrepreneur herself, she raised her family while managing her business as a single mother following the passing of Dave’s father.</p>
+          <p>The hard work and determination that made Dave successful in business are values he learned in New Jersey. Dave’s father — a Navy veteran who set up his own business as a carpenter and later worked as a union maintenance worker — earned a reputation for going out of his way to get the job done right. Dave would often work side-by-side with his dad after school and over the summers, learning the meaning of hard work and treating people fairly. Dave’s mother brought up Dave and his sister to be conscientious citizens who believed in family and service. An entrepreneur herself, she raised her family while managing her business as a single mother following the passing of Dave’s father.</p>
 
           <p>When Dave left home to go to Rutgers University, he served twice as the President of the Rutgers student body.</p>
 
@@ -83,7 +83,7 @@
       </div>
       <form action="/form/contributions" method="POST" id="payment-form" novalidate="novalidate">
         <div class="form-page form-page-1">
-            <h3>Select an amount:</h3>
+            <label><span>Select an amount:</span></label>
             <button type="button" class="amount" value="15">$15</button><!--
             --><button type="button" class="amount" value="35">$35</button><!--
             --><button type="button" class="amount" value="50">$50</button><!--
@@ -211,13 +211,11 @@
               <span>Card Number</span>
               <input class="cc-num" type="text" data-stripe="number" pattern="\d*">
             </label>
-            <label class="field2 clearfix">
+            <label class="field1 clearfix">
               <span>Expiration (MM / YY)</span>
-              <input class="exp" type="text" data-stripe="exp-month" maxlength="2" pattern="\d*">
-            </label>
-            <label class="field2 clearfix">
-              <span>&nbsp;</span>
-              <input class="exp" type="text" data-stripe="exp-year" maxlength="2" pattern="\d*">
+              <input class="exp" type="text" pattern="\d*">
+              <input class="expiry month" type="hidden" data-stripe="exp-month">
+              <input class="expiry year" type="hidden" data-stripe="exp-year">
             </label>
             <h3>Donation confirmation:</h3>
             <div class="confirm-copy prose">

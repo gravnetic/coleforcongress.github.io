@@ -1,7 +1,8 @@
 $(function() {
 
     /* Stripe */
-    Stripe.setPublishableKey('pk_live_2Hr2yN0PSWDpX8yAD8P6unAn');
+    /* live: */ Stripe.setPublishableKey('pk_live_2Hr2yN0PSWDpX8yAD8P6unAn');
+    /* test:    Stripe.setPublishableKey('pk_test_oZNDQkoLhkuZj9inYl6GlR6M'); */
 
     $('#payment-form').submit(function(event) {
         var $form = $(this);
@@ -23,7 +24,7 @@ $(function() {
         }
 
         // Disable the submit button to prevent repeated clicks
-        //$('#donate-submit').prop('disabled', true);
+        $('#donate-submit').attr('disabled', 'disabled');
 
         Stripe.card.createToken($form, stripeResponseHandler);
 
@@ -37,7 +38,7 @@ $(function() {
         if (response.error) {
             // Show the errors on the form
             $form.find('.payment-errors').text(response.error.message);
-            //$form.find('input[type="submit"]').prop('disabled', false);
+            $('#donate-submit').attr('disabled', null);
         } else {
             // token contains id, last4, and card type
             var token = response.id;
@@ -65,10 +66,21 @@ $(function() {
     });
 
     /* Contribute form */
+
+    /* Formatting */
+    $('input.cc-num').payment('formatCardNumber');
+    $('input.exp').payment('formatCardExpiry');
+    $('input.amount, input.zip').payment('restrictNumeric');
+
+    /* Handlers */
     $('button.amount').click(setAmount);
-    $('input.amount').focus(setAmount);
     $('input.amount').keyup(setAmount);
+    $('input.amount').focus(setAmount);
     $('input[name="fname"], input[name="lname"]').keyup(setName);
+    $('input[name="fname"], input[name="lname"]').focus(setName);
+    $('input.exp').keyup(setExp);
+    $('input.exp').focus(setExp);
+
     function setAmount(e) {
         $('button.amount, input.amount').toggleClass('active', false);
         $(this).toggleClass('active');
@@ -81,13 +93,18 @@ $(function() {
             $('#payment-form input[type="submit"]').val('Donate');
         }
     }
+
     function setName(e) {
         var fname = $('input[name="fname"]').val();
         var lname = $('input[name="lname"]').val();
         $('input[name="name"]').val(fname + ' ' + lname);
     }
-    $('input.cc-num').payment('formatCardNumber');
-    $('input.amount, input.exp, input.zip').payment('restrictNumeric');
+
+    function setExp(e) {
+        var exp = $(this).val().split(' / ');
+        $('input.expiry.month').val(exp[0]|| '');
+        $('input.expiry.year').val(exp[1] || '');
+    }
 
     /* Thank you message */
     if (window.location.hash === '#confirmed') {
@@ -96,5 +113,9 @@ $(function() {
         setTimeout(function() {
             $('body').removeClass('thanks');
         }, 30000);
+    }
+
+    if (window.location.hash === '#contribute') {
+        $('#contribute')[0].click();
     }
 });

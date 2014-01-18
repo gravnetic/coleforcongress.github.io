@@ -167,6 +167,7 @@ h2 {
   }
 #sign-up input[type="text"] {
   height: auto;
+  width: 196px;
   border: none;
   font-size: 14px;
   padding: 14px;
@@ -241,9 +242,8 @@ body.contribute #contribution-overlay {
   }
 #contribution-overlay .header {
   background: url(../img/footer-pattern.png);
-  height: 116px;
   text-align: center;
-  height: 155px;
+  height: 110px;
   border-bottom: 1px solid #d9e0e2;
   }
 #contribution-overlay .header h2 {
@@ -302,6 +302,12 @@ body.contribute #contribution-overlay {
 .form-page input[type="submit"].active {
   background-color: #f93348;
   color: white;
+  }
+
+.form-page input[type="submit"]:disabled {
+  background: rgb(213, 220, 221);
+  color: white;
+  cursor: progress;
   }
 
 .form-page input[type="text"] {
