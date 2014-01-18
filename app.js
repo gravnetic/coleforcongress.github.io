@@ -17,7 +17,11 @@ app.use(function(req, res, next) {
     }
     next();
 });
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public/_site'));
+
+app.get('/ofa', function(req, res) {
+    res.sendfile('ofa.html', { root: './public/_site' });
+});
 
 app.post('/form/contributions', function(req, res) {
     var b = req.body;
