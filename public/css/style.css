@@ -77,6 +77,7 @@ h2 {
   width: 420px;
   display: block;
   clear: both;
+  margin-left: 20px;
   }
 #header #logo {
   height: 145px;
@@ -87,6 +88,7 @@ h2 {
   font-family: Podkova;
   line-height: 36px;
   color: #303e48;
+  margin-left: 70px;
   }
 #quote p {
   position: relative;
