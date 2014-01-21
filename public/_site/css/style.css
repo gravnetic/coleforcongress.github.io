@@ -31,7 +31,7 @@ body {
   margin-bottom: 60px;
   }
 body.contribute .content {
-  height: 965px;
+  height: 1028px;
   }
 .dark a {
   color:white;
@@ -46,12 +46,15 @@ h2 {
   margin-bottom: 10px;
   color: white;
   }
+.prose p {
+  margin-bottom: 25px;
+  }
 .prose p img {
   border: 1px solid rgba(255,255,255,.1);
   background: rgba(255,255,255,0.25);
   }
 .prose ul {
-  margin-left: 20px;
+  margin-left: 0px;
   }
 .prose ul li, .prose ol li {
   margin-bottom: 1em;
@@ -285,6 +288,26 @@ h2 {
   font-weight: normal;
   font-size: 33px;
   }
+
+.sidebar h2:first-child {
+  margin-top: 0px;
+  }
+.sidebar h2 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 40px;
+  margin-top: 65px;
+  }
+.sidebar ul li {
+  margin-bottom: 25px;
+  }
+#header .sign-up input[type="submit"]:hover {
+  background: #0971ce;
+  }
+
+
+
 @media only screen and (max-width:640px) {
   #logo {
 /*     background-position: 50% -10px; */
@@ -303,8 +326,13 @@ h2 {
   }
 body.contribute #contribute,
 body.contribute #quote,
-body.contribute #container > div {
+body.contribute #container > div > div {
   opacity: 0;
+  }
+body.contribute #container #menu {
+  opacity: 1;
+  height: 5px;
+  overflow: hidden;
   }
 
 /* contribution form */

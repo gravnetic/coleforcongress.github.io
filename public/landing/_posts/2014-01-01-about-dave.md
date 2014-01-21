@@ -10,10 +10,9 @@ sidebar: |
     <li>Served as a Senior Advisor for Technology at the White House, worked to make government more open and efficient</li>
     <li>South Jersey born and raised, Rutgers and Clearview graduate, lives in Mantua Township</li>
   </ul>
-  <br>
   <h2>Dave's Priorities</h2>
   <ul>
-    <li>Jumpstart the stalled economy in South Jersey, which has led to high unemployment,  shrinking paychecks and cut-back hours for working families</li>
+    <li>Jumpstart the stalled economy in South Jersey, which has led to high unemployment, shrinking paychecks and cut-back hours</li>
     <li>Rein in abuses in the financial industry that brought on the foreclosure crisis, hurting families across our region</li>
     <li>Raise the national minimum wage to ensure South Jersey businesses and labor stay competitive</li>
     <li>Support the health reforms that put people over profits, banned pre-existing condition and gender-based discriminations, provided insurance for hundreds of thousands of families, and do more to lower costs and expand coverage</li>
