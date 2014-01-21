@@ -23,7 +23,7 @@ $(function() {
             return false;
         }
 
-        // Disable the submit button to prevent repeated clicks
+        // Disable the submit button to prevent repeated click
         $('#donate-submit').attr('disabled', 'disabled');
 
         Stripe.card.createToken($form, stripeResponseHandler);

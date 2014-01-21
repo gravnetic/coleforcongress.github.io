@@ -1,8 +1,8 @@
 $(function() {
 
     /* Stripe */
-    /* live:  Stripe.setPublishableKey('pk_live_2Hr2yN0PSWDpX8yAD8P6unAn');*/
-    /* test: */   Stripe.setPublishableKey('pk_test_oZNDQkoLhkuZj9inYl6GlR6M');
+    /* live: */ Stripe.setPublishableKey('pk_live_2Hr2yN0PSWDpX8yAD8P6unAn');
+    /* test:    Stripe.setPublishableKey('pk_test_oZNDQkoLhkuZj9inYl6GlR6M'); */
 
     $('#payment-form').submit(function(event) {
         var $form = $(this);
@@ -23,7 +23,7 @@ $(function() {
             return false;
         }
 
-        // Disable the submit button to prevent repeated clicks
+        // Disable the submit button to prevent repeated click
         $('#donate-submit').attr('disabled', 'disabled');
 
         Stripe.card.createToken($form, stripeResponseHandler);
