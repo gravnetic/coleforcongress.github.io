@@ -1,11 +1,13 @@
 ---
 layout: feature
-quote: I am exploring a campaign to bring new solutions and new leadership to our district. The stakes are too high not to act. Together we can and will do better.
+quote: Everyone who wants a job should be able to find one. And everyone who works hard should be able to provide for their families. That's a strong middle class, and it's what I'm fighting for.
 byline: Dave Cole
 ---
 
 ## A Fresh Start for South Jersey
 
-Dave Cole is an entrepreneur and an engineer, with experience growing businesses in the private sector and modernizing technology as a public servant.
+Dave Cole is an entrepreneur and an engineer, with experience growing businesses in the private sector and modernizing government as a public servant. He served in President Obama's White House as a Senior Advisor for Technology.
 
-Join our campaign to elect a representative who will work tirelessly on behalf families across South Jersey to bring back jobs, create new opportunities, invest in education and infrastructure, and protect our natural environment for generations to come.
+He's running for Congress as a Democrat in New Jersey's 2nd Congressional District. He will work tirelessly on behalf of families across South Jersey to bring back jobs, create new opportunities, ensure affordable and effective health care, invest in education and infrastructure, and protect our natural environment for generations to come.
+
+[Learn more »](/about)

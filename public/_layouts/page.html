@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<style>{{page.css}}</style>
 <div id="header" class="grid">
   <div class="col7"><a href="/" id="logo" class=""></a></div>
   <div class="col5 sign-up-container"><div class="sign-up">
@@ -29,10 +29,10 @@ layout: default
     {% for post in site.categories.landing reversed %}<a class="item {%if page.id == post.id %}active{% endif %}" href="{{post.url}}">{{post.title}}</a>{% endfor %}<a class="item donate" href="/#contribute">Contribute</a>
   </div></div></div>
   <div class="grid clearfix">
-    <div class="col7 content prose dark">
+    <div class="col7 content prose">
       {{content}}
     </div>
-    <div class="margin1 col4 content prose dark sidebar">
+    <div class="margin1 col4 content prose sidebar">
       {{page.sidebar}}
     </div>
   </div>

@@ -1,0 +1,179 @@
+{% raw %}
+<form action="https://act.myngp.com/Forms/3572480404411645952" method="post"><input id="Version" name="Version" type="hidden" value="AAAAA69gXAY=" /><input id="id" name="id" type="hidden" value="3572480404411645952" /><input id="ObfuscatedMailingId" name="ObfuscatedMailingId" type="hidden" value="" /><input id="TenantName" name="TenantName" type="hidden" value="dcole" /><input id="SourceCodeIds" name="SourceCodeIds" type="hidden" value="" /><input id="MarketSource" name="MarketSource" type="hidden" value="" /><input id="formType" name="formType" type="hidden" value="SignupForm" />			<div class="col ngp-col primary ngp-primary">
+
+
+
+
+
+<script type="text/javascript">
+var refreshValidation = function() {
+var formToRefresh = $('form');
+
+formToRefresh.each(function() {
+var form = $(this);
+form.removeData('validator');
+$.validator.unobtrusive.parse(form);
+});
+};
+$(document).ready(function () {
+$.validator.addMethod("isTwitterHandle", function (value) {
+return "" == value.replace(/^@?[A-Za-z0-9_]{1,15}$/, "");
+}, "The Twitter handle must be no longer than 15 characters and can only contain letters, numbers and the underscore character.");
+
+$.validator.unobtrusive.adapters.addBool('isTwitterHandle');
+
+refreshValidation();
+});
+</script>
+
+<div class="ngp-box">
+<fieldset class="ngp-contactSection">
+<legend id="ContactSectionTitle">
+Contact Information
+</legend>
+<div class="fieldsetContent ngp-fieldsetContent">
+<dl class="first ngp-first">
+<dt>
+<label class="required" for="FirstName_Value">
+First Name:
+</label>
+</dt>
+<dd> 
+<input class="jq_watermark" data-val="true" data-val-length="The maximum number of characters is 50." data-val-required="First Name is required." id="FirstName_Value" maxlength="50" name="FirstName.Value" placeholder="First Name" tabindex="11" type="text" value="" />                <span class="field-validation-valid" data-valmsg-for="FirstName.Value" data-valmsg-replace="true"></span>
+</dd>
+</dl>
+<dl class="last ngp-last">
+<dt>
+<label class="required" for="LastName_Value">
+Last Name:
+</label>
+</dt>
+<dd> 
+<input class="jq_watermark" data-val="true" data-val-length="The maximum number of characters is 50." data-val-required="Last Name is required." id="LastName_Value" maxlength="50" name="LastName.Value" placeholder="Last Name" tabindex="13" type="text" value="" />                <span class="field-validation-valid" data-valmsg-for="LastName.Value" data-valmsg-replace="true"></span>
+</dd>
+</dl>
+
+
+<dl class="address ngp-address">				                       
+<dt>
+<label class="required">
+Address:
+</label>
+</dt>
+
+
+
+<dd class="zip required ngp-zip">
+
+<input class="jq_watermark" data-val="true" data-val-length="The maximum number of characters is 15." data-val-length-max="15" data-val-regex="Invalid zip code.  Acceptable formats are 12345 or 12345-1111." data-val-regex-pattern="^\d{5}(\-\d{4})?$" data-val-required="Postal Code is required." id="PostalCode_Value" name="PostalCode.Value" placeholder="Zip/Postal Code" tabindex="19" type="text" value="" />
+<span class="field-validation-valid" data-valmsg-for="PostalCode.Value" data-valmsg-replace="true"></span>
+<label for="PostalCode_Value" class="no-js hint">
+ZIP Code
+</label>
+</dd>
+
+
+</dl>
+
+<dl class="home ngp-home">
+<dt>
+<label class=""
+for="HomePhone_Value">
+Home Phone:
+</label>
+</dt>
+<dd>
+
+
+<input class="jq_watermark" data-val="true" data-val-length="The maximum number of characters is 25." data-val-length-max="25" data-val-regex="Invalid phone number." data-val-regex-pattern="^(\([2-9]\d{2}\)|[2-9]\d{2})?(\s|-)?[2-9]\d{2}(\s|-)?\d{4}(\s{0,2}(ext|ex|x)\.?\s?\d{1,5})?$" id="HomePhone_Value" name="HomePhone.Value" placeholder="(___) ___-____ x___" tabindex="21" type="tel" value="" />		
+<span class="field-validation-valid" data-valmsg-for="HomePhone.Value" data-valmsg-replace="true"></span>
+</dd>
+</dl>
+
+
+
+<dl class="email ngp-email">
+<dt>
+<label class="required" for="EmailAddress_Value">
+Email Address:
+</label>
+</dt>
+<dd>
+
+<input class="jq_watermark" data-val="true" data-val-emailSpecial="The email address is invalid." data-val-length="The maximum number of characters is 100." data-val-length-max="100" data-val-regex="Not a supported email address." data-val-regex-pattern="^([\w\!\#$\%\&amp;\&#39;\*\+\-\/\=\?\^\`{\|\}\~]+\.)*[\w\!\#$\%\&amp;\&#39;\*\+\-\/\=\?\^\`{\|\}\~]+@((((([a-z0-9]{1}[a-z0-9\-]{0,62}[a-z0-9]{1})|[a-z])\.)+[a-z]{2,6})|(\d{1,3}\.){3}\d{1,3}(\:\d{1,5})?)$" data-val-required="Email is required." id="EmailAddress_Value" name="EmailAddress.Value" placeholder="_____@_____.____" tabindex="23" type="email" value="" />		           
+<span class="field-validation-valid" data-valmsg-for="EmailAddress.Value" data-valmsg-replace="true"></span>
+</dd>
+</dl>
+
+
+
+
+</div>
+</fieldset>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+window.customFields = JSON.parse('[]');
+</script>    
+<fieldset id="CustomFieldsSection" class="ngp-customFieldsSection">
+<legend id="CustomFieldsInfoSectionTitle">
+Additional Information
+</legend>
+
+<div class="fieldsetContent ngp-fieldsetContent">            
+
+<dl>        
+</dl>
+<dl class="comment">
+<dt>
+<label class="" for="Comment_Value">
+Interests and Experience:
+</label>
+</dt>
+<dd> 
+<textarea class="jq_watermark" cols="20" data-val="true" data-val-length="The maximum number of characters is 1024." id="Comment_Value" maxlength="1024" name="Comment.Value" placeholder="Interests and Experience" rows="2" tabindex="179">
+</textarea>                <span class="field-validation-valid" data-valmsg-for="Comment.Value" data-valmsg-replace="true"></span>
+</dd>
+</dl>
+
+</div>
+</fieldset>
+<script type="text/javascript">
+$("#CustomFieldsSection input.datepicker").datepicker({
+changeMonth: true,
+changeYear: true,
+showButtonPanel: true,
+showOn: 'button',
+buttonImage: '/Content/images/calendar.png',
+buttonImageOnly: true,
+buttonText: 'Select a date.',
+onSelect: function (dateText) {
+$(this).focus();
+$(this).trigger("keyup");
+$(this).trigger("change");
+}
+});
+</script>
+
+</div>
+<div class="contribute ngp-contribute">
+<button id="contribute" tabindex="250"  type="submit" >                
+Submit
+</button>
+</div>
+<span class="field-validation-valid" data-valmsg-for="ClientSideErrorHeader" data-valmsg-replace="true"></span></form>
+{% endraw %}

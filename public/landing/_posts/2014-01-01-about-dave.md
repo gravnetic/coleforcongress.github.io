@@ -23,7 +23,7 @@ sidebar: |
   </ul>
 ---
 ![Dave Cole](/img/dave-full.jpg)
-<div class="hi-res"><a href="/img/dave-cole-hi-res.png" target="_blank">Download Hi-Res</a></div>
+<div class="hi-res"><a href="/img/dave-cole-hi-res-4x3.png" target="_blank">Download Hi-Res</a></div>
 
 
 Dave Cole is an entrepreneur and an engineer, with experience growing businesses in the private sector and modernizing technology as a public servant.

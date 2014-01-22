@@ -1,0 +1,3 @@
+markdown: rdiscount
+rdiscount:
+  extensions: [generate_toc, smart]
