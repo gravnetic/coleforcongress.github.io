@@ -1,7 +1,20 @@
----
-layout: default
----
-<style>{{page.css}}</style>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=yes">
+  <meta charset=utf-8>
+  <title>Dave Cole for Congress, New Jersey's 2nd District</title>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+  <link href="/css/fonts.css" rel="stylesheet">
+  <link href="/css/base.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <script src="/js/lib/jquery.js"></script>
+  <script src="/js/lib/jquery.payment.js"></script>
+</head>
+<body class="">
+  <style></style>
 <div id="header" class="grid">
   <div class="col7"><a href="/" id="logo" class=""></a></div>
   <div class="col5 sign-up-container"><div class="sign-up">
@@ -26,20 +39,35 @@ layout: default
 </div>
 <div id="container"><div class="bg">
   <div id="menu"><div class="grid"><div class="col12">
-    {% for post in site.categories.landing reversed %}<a class="item {%if page.id == post.id %}active{% endif %}" href="{{post.url}}">{{post.title}}</a>{% endfor %}<a class="item donate" href="/#contribute">Contribute</a>
+    <a class="item " href="/about">About Dave</a><a class="item " href="/get-involved">Get Involved</a><a class="item " href="/share-your-story">Share Your Story</a><a class="item donate" href="/#contribute">Contribute</a>
   </div></div></div>
   <div class="grid clearfix">
-    <div class="{% if page.sidebar %}col7 {% endif %}content prose">
-      {{content}}
+    <div class="content prose">
+      <h2> Landing pages</h2>
+<ul class="">
+
+  <li><span>28 Jan 2014</span> <a href="/pages/2014/01/28/spread-the-word/">Spread The Word</a></li>
+
+</ul>
     </div>
-    {% if page.sidebar %}
-    <div class="margin1 col4 content prose sidebar">
-      {{page.sidebar}}
-    </div>
-    {% endif %}
+    
   </div>
 </div></div>
 <div id="footer">
   <div id="compliance">Paid for by the Cole Congressional Exploratory Committee</div>
   <div id="copyright">© 2013 Cole Congressional Exploratory Committee</div>
 </div>
+
+  <script src="/js/script.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-46291930-1', 'coleforcongress.com');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>

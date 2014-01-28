@@ -64,8 +64,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family:'Open Sans Bold', sans-serif;
-  font-weight:normal;
+  font-weight:bold;
   margin:0;
   }
 
@@ -75,7 +74,7 @@ em h3, h3 em,
 em h4, h4 em,
 em h5, h5 em,
 em h6, h6 em {
-  font-family:'Open Sans Bold Italic', sans-serif;
+  font-style: italic;
   }
 
 h1 {
@@ -116,15 +115,14 @@ small { display:block; }
 
 .strong,
 strong {
-  font-family:'Open Sans Bold', sans-serif;
-  font-weight:normal;
+  font-weight:bold;
   }
   strong em,
-  em strong { font-family:'Open Sans Bold Italic', sans-serif; }
+  em strong { font-weight: bold; font-style: italic; }
 
 address,
 em {
-  font-family:'Open Sans Italic', sans-serif;
+  font-style: italic;
   }
 
 /* Links */

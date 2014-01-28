@@ -1,3 +1,5 @@
+title: "Dave Cole for Congress, New Jersey's 2nd District"
+permalink: pretty
 markdown: rdiscount
 rdiscount:
   extensions: [generate_toc, smart]

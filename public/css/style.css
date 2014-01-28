@@ -46,6 +46,7 @@ h2 {
   text-transform: uppercase;
   margin-bottom: 10px;
   color: white;
+  font-weight: normal;
   }
 .prose p {
   margin-bottom: 25px;
@@ -64,7 +65,7 @@ h2 {
   text-align: right;
   position: relative;
   margin-top: -20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-family: 'League Gothic';
   text-transform: uppercase;
   color: #00a6d2;
@@ -124,7 +125,7 @@ h2 {
   min-height: 356px;
   position: relative;
   text-align: center;
-  top: -3px;
+  top: -6px;
   }
 #contribute-badge {
   width: 301px;
@@ -134,7 +135,7 @@ h2 {
   background: no-repeat url(../img/button.png);
   position: absolute;
   top: -180px;
-  left: 5px;
+  left: 10px;
   -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
   -o-transition-duration: 0.4s;

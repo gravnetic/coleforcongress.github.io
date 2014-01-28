@@ -1,12 +1,9 @@
 ---
 layout: page
-sidebar: " "
 ---
 <style>
   .fieldset-wrapper .form-item {
-    float: left;
-    width: 50%;
-    padding-right: 20px;
+    width: 100%;
     margin: 0;
     }
   fieldset input[type="text"],
@@ -111,9 +108,13 @@ sidebar: " "
     padding-top: 40px;
     }
 </style>
-{{content}}
-<script type="text/javascript" src="//d1aqhv4sn5kxtx.cloudfront.net/nvtag.js"></script>
-<noscript>
-  <iframe frameborder="0" style="width: 100%; height: 650px;" src="https://act.myngp.com/Forms/{{page.form}}"></iframe>
-</noscript>
-<div class="ngp-form" data-id="{{page.form}}" data-inline-errors="false" data-template="minimal"></div>
+<div class="col7" style="padding-bottom: 60px;">
+  {{content}}
+</div>
+<div class="pad2x col5 sidebar">
+  <script type="text/javascript" src="//d1aqhv4sn5kxtx.cloudfront.net/nvtag.js"></script>
+  <noscript>
+    <iframe frameborder="0" style="width: 100%; height: 650px;" src="https://act.myngp.com/Forms/{{page.form}}"></iframe>
+  </noscript>
+  <div class="ngp-form" data-id="{{page.form}}" data-inline-errors="false" data-template="minimal"></div>
+</div>

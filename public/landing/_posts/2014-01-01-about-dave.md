@@ -7,25 +7,13 @@ sidebar: |
   <h2>Dave's Experience</h2>
   <ul>
     <li>Successful entrepreneur and software engineer, part of a team that built and grew a popular technology startup</li>
-    <li>Served as a Senior Advisor for Technology at the White House, worked to make government more open and efficient</li>
+    <li>Served as a Senior Advisor for Technology at the White House, worked to make government more efficient and responsive</li>
     <li>Organized volunteers across New Jersey in support of Barack Obama's 2008 campaign</li>
     <li>South Jersey born and raised, Rutgers and Clearview graduate, lives in Mantua Township</li>
-  </ul>
-  <h2>Dave's Priorities</h2>
-  <ul>
-    <li>Jumpstart the stalled economy in South Jersey, which has led to high unemployment, shrinking paychecks and cut-back hours</li>
-    <li>Rein in abuses in the financial industry that brought on the foreclosure crisis, hurting families across our region</li>
-    <li>Raise the national minimum wage to ensure South Jersey businesses and labor stay competitive</li>
-    <li>Support the health reforms that put people over profits, banned pre-existing condition and gender-based discriminations, provided insurance for hundreds of thousands of families, and do more to lower costs and expand coverage</li>
-    <li>Sponsor climate legislation to protect our beaches and prevent against increasingly powerful superstorms like Sandy</li>
-    <li>Protect network neutrality, outlaw domestic spying, and establish rules for commercial drones that grow our economy and protect our privacy</li>
-    <li>Tirelessly advocate on behalf of South Jersey, and be an active and engaged representative for our district</li>
-    <li>End the era of government shutdowns and austere budget cuts that weaken our economy, bringing new blood to a historically unpopular and ineffective Congress</li>
   </ul>
 ---
 ![Dave Cole](/img/dave-full.jpg)
 <div class="hi-res"><a href="/img/dave-cole-hi-res-4x3.png" target="_blank">Download Hi-Res</a></div>
-
 
 Dave Cole is an entrepreneur and an engineer, with experience growing businesses in the private sector and modernizing technology as a public servant.
 
