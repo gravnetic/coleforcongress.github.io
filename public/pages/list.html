@@ -1,0 +1,9 @@
+---
+layout: page
+---
+<h2> Landing pages</h2>
+<ul class="">
+{% for post in site.categories.pages %}
+  <li><span>{{post.date | date_to_string}}</span> <a href="{{post.url}}">{{post.title}}</a></li>
+{% endfor%}
+</ul>

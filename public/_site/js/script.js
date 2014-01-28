@@ -23,7 +23,7 @@ $(function() {
             return false;
         }
 
-        // Disable the submit button to prevent repeated clicks
+        // Disable the submit button to prevent repeated click
         $('#donate-submit').attr('disabled', 'disabled');
 
         Stripe.card.createToken($form, stripeResponseHandler);
@@ -50,7 +50,7 @@ $(function() {
     };
 
     /* Contribute button */
-    document.getElementById('contribute').addEventListener('click', function(e) {
+    $('#contribute-badge').on('click', function(e) {
         $('body').addClass('contribute');
         $('html,body').animate({ scrollTop: 0 }, 0.4 * 1000);
         e.preventDefault();
@@ -120,7 +120,7 @@ $(function() {
     }
 
     if (window.location.hash === '#contribute') {
-        $('#contribute')[0].click();
+        $('#contribute-badge')[0].click();
     }
 
     // OFA form
@@ -141,3 +141,7 @@ $(function() {
         return false;
     });
 });
+
+Array.prototype.move = function(from, to) {
+    this.splice(to, 0, this.splice(from, 1)[0]);
+};
