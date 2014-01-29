@@ -565,3 +565,27 @@ body.thanks #message .thanks {
 #ofa-overlay.thanks .thanks {
   opacity: 1;
   }
+.sidebar a.button {
+  background-color: #91c0eb;
+  font-family: 'League Gothic';
+  font-size: 24px;
+  font-weight: normal;
+  border-radius: 4px;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  -moz-transition: background-color 0.2s, color 0.2s;
+  -o-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+  text-transform: uppercase;
+  }
+.sidebar a.button:hover {
+  background-color: #f93348;
+  }
+.rcon.twitter:after, .icon.twitter:before {
+  background-position: -1105px 0;
+  }
+.rcon.facebook:after, .icon.facebook:before {
+  background-position: -2330px 0;
+  }
+.rcon.mail:after, .icon.mail:before {
+  background-position: -1065px 0;
+  }
