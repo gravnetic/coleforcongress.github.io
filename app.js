@@ -7,6 +7,11 @@ var app = express();
 
 app.use(express.compress());
 app.use(express.bodyParser());
+
+app.get('/', function(req, res) {
+    res.redirect(301, 'http://coleforcongress.com');
+});
+
 app.use(function(req, res, next) {
     var host = req.headers.host;
     host = (host.substr(0, 4) !== 'www.') ? 'www.' + host : host;
