@@ -523,7 +523,7 @@ body.contribute #contribution-overlay, .overlay {
   padding-bottom: 30px;
   }
 #message .thanks {
-  position: absolute;
+  position: fixed;
   width: 100%;
   background: rgba(255,255,255,0.9);
   text-align: center;
@@ -532,6 +532,7 @@ body.contribute #contribution-overlay, .overlay {
   font-family: Podkova;
   font-size: 26px;
   display: none;
+  top: 0;
   }
 body.thanks #message .thanks {
   display: block;

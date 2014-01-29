@@ -20,6 +20,15 @@ $(function() {
         } catch(e) {}
         return false;
     });
+
+    /* Thank you message */
+    if (window.location.hash === '#confirmed') {
+        window.history.pushState(null, null, '#');
+        $('body').addClass('thanks');
+        setTimeout(function() {
+            $('body').removeClass('thanks');
+        }, 30000);
+    }
 });
 
 Array.prototype.move = function(from, to) {
