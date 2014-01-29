@@ -60,15 +60,6 @@ $(function() {
         if (e.keyCode == 27) { $('body').removeClass('contribute'); }  // esc
     });
 
-    $('#logo').click(function(e) {
-        if ($('body').hasClass('contribute')) {
-            $('body').removeClass('contribute');
-        } else {
-            window.location = '/';
-        }
-        e.preventDefault();
-    });
-
     /* Contribute form */
 
     /* Formatting */
