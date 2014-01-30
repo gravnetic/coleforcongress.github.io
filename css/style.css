@@ -168,6 +168,14 @@ h2 {
   position: relative;
   left: 2px;
   }
+#mce-EMAIL {
+  width: 133px;
+  }
+#mce-ZIP {
+  width: 59px;
+  margin: 2px;
+  }
+
 #mc_embed_signup #mce-success-response {
   color: #529214;
   display: none;
@@ -218,7 +226,7 @@ h2 {
   width: 196px;
   border: none;
   font-size: 14px;
-  padding: 14px;
+  padding: 14px 8px;
   color: #303e48;
   font-family: Montserrat;
   text-transform: uppercase;
