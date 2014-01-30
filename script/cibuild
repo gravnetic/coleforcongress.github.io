@@ -1,0 +1,5 @@
+#! /usr/env
+
+script/bootstrap
+
+bundle exec rake test

@@ -3,7 +3,7 @@ layout: page
 permalink: /get-started
 sidebar: |
   <h2>SHARE THIS</h2>
-  <div class="prose"><p><img src="/img/social/dave-itir.png"></p></div>
+  <div class="prose"><p><img src="/img/social/dave-itir.png" alt="Dave and Itir"></p></div>
   <div class="pad2y">
     <a target="_blank" href="mailto:?subject=Join%20my%20friend%20Dave&amp;body=My%20friend%20Dave%20Cole%20is%20running%20for%20Congress%20in%20New%20Jersey's%202nd%20District.%20%0D%0A%0D%0AJoin%20me%20in%20supporting%20his%20campaign%20for%20a%20Fresh%20Start%20in%20South%20Jersey!%20%0D%0A%0D%0AGo%20to%20his%20website%20to%20learn%20more%3A%20http%3A%2F%2Fcoleforcongress.com%2Fjoin-us" class="icon mail button">Email</a>
     <a href="https://www.facebook.com/sharer/sharer.php?u=http://coleforcongress.com/join-us/" target="_blank" class="icon facebook button">Facebook</a>
