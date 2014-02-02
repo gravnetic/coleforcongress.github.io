@@ -2,8 +2,11 @@
 layout: default
 ---
 <style>{{page.css}}</style>
-<div id="header" class="grid">
+<div id="header" class="grid relative">
   <div class="col7"><a href="/" id="logo" class=""></a></div>
+  <div id="header-social">
+    {% include social.html %}
+  </div>
   <div class="col5 sign-up-container"><div class="sign-up">
     <h2>Get campaign updates</h2>
     <!-- Begin MailChimp Signup Form -->
@@ -39,7 +42,4 @@ layout: default
     {% endif %}
   </div>
 </div></div>
-<div id="footer">
-  <div id="compliance">Paid for by the Cole Congressional Exploratory Committee</div>
-  <div id="copyright">© 2013 Cole Congressional Exploratory Committee</div>
-</div>
+{% include footer.html %}
