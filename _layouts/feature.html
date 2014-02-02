@@ -2,8 +2,11 @@
 layout: default
 ---
 <div id="feature">
-  <div class="grid clearfix">
+  <div class="grid clearfix relative">
     <a href="/" id="logo" class="col12"></a>
+    <div id="header-social">
+      {% include social.html %}
+    </div>
     {% if page.quote %}
     <div id="quote" class="col6">
         <p>{{page.quote}}</p>
@@ -48,10 +51,7 @@ layout: default
     </div>
   </div>
 </div></div>
-<div id="footer">
-  <div id="compliance">Paid for by the Cole Congressional Exploratory Committee</div>
-  <div id="copyright">© 2013 Cole Congressional Exploratory Committee</div>
-</div>
+{% include footer.html %}
 <div id="message">
   <div class="thanks">
     Thanks for your generous contribution!

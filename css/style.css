@@ -40,6 +40,9 @@ body.contribute .content {
 .content a:hover {
   color:white;
   }
+.relative {
+  position: relative;
+  }
 h2 {
   font-size: 37px;
   font-family: 'League Gothic';
@@ -150,6 +153,23 @@ h2 {
   -moz-transform:rotate(-5deg);
   -o-transform:rotate(-5deg);
   }
+#twitter-widget-0 {
+  }
+#fb-button {
+  height: 20px;
+  margin-left: 6px;
+  width: 47px;
+  }
+#footer-social {
+  margin: 0 auto;
+  width: 117px;
+  padding-top: 40px;
+  }
+#header-social {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  }
 .sign-up {
   display: inline-block;
   position: relative;
@@ -235,16 +255,30 @@ h2 {
 #header .sign-up {
   border: none;
   float: right;
-  top: 30px;
+  top: 58px;
   width: auto;
   }
+#header .sign-up h2 {
+  font-size: 28px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: right;
+  }
+#header .sign-up input[type="text"] {
+  font-size: 12px;
+  padding: 10px 6px;
+  }
+#header .sign-up #mc-embedded-subscribe {
+  height: 40px;
+  }
+
 #header #mc_embed_signup {
   border: none;
   padding: 0;
   }
 #footer {
   background: url(../img/footer-pattern.png);
-  height: 116px;
+  padding-bottom: 20px;
   text-align: center;
   }
 #compliance {
