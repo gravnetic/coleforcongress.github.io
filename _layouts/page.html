@@ -4,10 +4,10 @@ layout: default
 <style>{{page.css}}</style>
 <div id="header" class="grid relative">
   <div class="col7"><a href="/" id="logo" class=""></a></div>
-  <div id="header-social">
+  <div id="header-social" class="hide-mobile">
     {% include social.html %}
   </div>
-  <div class="col5 sign-up-container"><div class="sign-up">
+  <div class="col5 sign-up-container hide-tablet"><div class="sign-up">
     <h2>Get campaign updates</h2>
     <!-- Begin MailChimp Signup Form -->
     <div id="mc_embed_signup">
@@ -29,10 +29,10 @@ layout: default
 </div>
 <div id="container"><div class="bg">
   <div id="menu"><div class="grid"><div class="col12">
-    {% for post in site.categories.landing reversed %}<a class="item {%if page.id == post.id %}active{% endif %}" href="{{post.url}}">{{post.title}}</a>{% endfor %}<a class="item donate" href="https://www.coleforcongress.com/contribute">Contribute</a>
+    {% for post in site.categories.landing reversed %}<a class="item {%if page.id == post.id %}active{% endif %}" href="{{post.url}}">{{post.title}}</a>{% endfor %}<a class="item donate hide-mobile" href="https://www.coleforcongress.com/contribute">Contribute</a>
   </div></div></div>
   <div class="grid clearfix">
-    <div class="{% if page.sidebar %}col7 {% endif %}content prose">
+    <div class="{% if page.sidebar %}col7 {% endif %}content prose pad1x">
       {{content}}
     </div>
     {% if page.sidebar %}

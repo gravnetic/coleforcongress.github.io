@@ -639,13 +639,6 @@ body.thanks #message .thanks {
   }
 }
 
-@media only screen and (max-width:640px) {
-  #quote {
-    width: 90%;
-    padding-right: 20px;
-  }
-}
-
 @media only screen and (max-width:815px) {
   #menu .item {
     font-size: 25px;
@@ -654,8 +647,18 @@ body.thanks #message .thanks {
     margin-top: 10px;
   }
 }
+@media only screen and (max-width:770px) {
+  #logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 @media only screen and (max-width:640px) {
+  #quote {
+    width: 90%;
+    padding-right: 20px;
+  }
   #menu .item {
     padding: 0 9px;
   }
