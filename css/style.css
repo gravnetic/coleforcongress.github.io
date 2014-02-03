@@ -633,6 +633,8 @@ body.thanks #message .thanks {
 
 /* Responsiveness */
 
+#menu a.show-tablet { display: none; }
+
 @media only screen and (max-width:940px) {
   #quote {
     font-size: 1.4em;
@@ -676,6 +678,12 @@ body.thanks #message .thanks {
     float: left;
     margin-bottom: 50px;
   }
+  #menu a.show-tablet {
+    display: block;
+  }
+  #menu .mobile-cols {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width:640px) {
@@ -697,5 +705,8 @@ body.thanks #message .thanks {
   }
   .sign-up {
     float: none;
+  }
+  #menu a.hide-phone {
+    display: none;
   }
 }
