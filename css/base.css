@@ -1855,7 +1855,7 @@ img.inline, .inline         { display:inline-block; }
 
 /* Mobile Layout
 ------------------------------------------------------- */
-/*
+
 @media only screen and (max-width:640px) {
   .limiter        { width:100%; padding:0 20px; }
   a:link          { -webkit-tap-highlight-color:rgba(0,0,0,0); }
@@ -1960,7 +1960,6 @@ img.inline, .inline         { display:inline-block; }
   .mobile-cols > .margin11 { margin-left:91.6666%; }
   .mobile-cols > .margin12 { margin-left:100.0000%; }
 
-*/
   /* Anchor icon adds noise to the page on smaller displays */
   .doc h1[id]:before,
   .doc h2[id]:before,

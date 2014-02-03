@@ -3,7 +3,6 @@ body, h1, h2, h3, h4 {
   }
 body {
   background: #fff repeat-x url(../img/body-pattern.png);
-  min-width: 937px;
   }
 .grid {
   max-width: 960px;
@@ -354,8 +353,8 @@ h2 {
 
 
 @media only screen and (max-width:640px) {
-  #logo {
-/*     background-position: 50% -10px; */
+  #feature {
+     background-position: 0 0;
     }
 }
 
@@ -631,3 +630,33 @@ body.thanks #message .thanks {
 .rcon.mail:after, .icon.mail:before {
   background-position: -1065px 0;
   }
+
+/* Responsiveness */
+
+@media only screen and (max-width:940px) {
+  #quote {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (max-width:640px) {
+  #quote {
+    width: 90%;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width:815px) {
+  #menu .item {
+    font-size: 25px;
+  }
+  .content {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width:640px) {
+  #menu .item {
+    padding: 0 9px;
+  }
+}

@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="feature">
-  <div class="grid clearfix relative">
+  <div class="grid clearfix relative pad1x mobile-cols">
     <a href="/" id="logo" class="col12"></a>
     <div id="header-social">
       {% include social.html %}
@@ -16,16 +16,16 @@ layout: default
   </div>
 </div>
 <div id="container"><div class="bg">
-  <div id="menu"><div class="grid"><div class="col8">
+  <div id="menu"><div class="grid"><div class="col8  pad1x">
     {% for post in site.categories.landing reversed %}
     <a class="item" href="{{post.url}}">{{post.title}}</a>
     {% endfor %}
   </div></div></div>
   <div class="grid clearfix">
-    <div class="col7 content prose dark">
+    <div class="col7 content prose dark pad1x">
       {{content}}
     </div>
-    <div id="sidebar" class="col4 margin1">
+    <div id="sidebar" class="col4 margin1 hide-tablet hide-mobile">
       <a href="https://www.coleforcongress.com/contribute" id="contribute-badge">Contribute to Dave's Campaign</a>
 
       <div class="sign-up"><div>
