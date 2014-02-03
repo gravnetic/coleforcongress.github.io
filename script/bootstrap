@@ -1,3 +1,4 @@
 #! /usr/env
 
+gem install bundler
 bundle install
