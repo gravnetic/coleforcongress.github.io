@@ -651,6 +651,26 @@ body.thanks #message .thanks {
     margin-bottom: 10px;
     width: 100%;
   }
+  #sidebar {
+    background: none;
+  }
+  #contribute-badge {
+    -webkit-transform: none;
+    top: 0;
+    left: 0;
+    position: relative;
+    background-position: center;
+    display: block;
+    background-size: 200px;
+    height: 200px;
+    width: 100%;
+  }
+  #contribute-badge:hover {
+    -webkit-transform: none;
+  }
+  .sign-up {
+    top: 0;
+  }
 }
 
 @media only screen and (max-width:640px) {
