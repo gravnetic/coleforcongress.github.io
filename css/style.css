@@ -648,6 +648,7 @@ body.thanks #message .thanks {
   }
   .content {
     margin-top: 10px;
+    margin-bottom: 10px;
     width: 100%;
   }
 }
