@@ -642,7 +642,7 @@ body.thanks #message .thanks {
   }
 }
 
-@media only screen and (max-width:815px) {
+@media only screen and (max-width:830px) {
   #menu .item {
     font-size: 25px;
   }
@@ -653,6 +653,8 @@ body.thanks #message .thanks {
   }
   #sidebar {
     background: none;
+    width: 100%;
+    min-height: 0;
   }
   #contribute-badge {
     -webkit-transform: none;
@@ -663,13 +665,16 @@ body.thanks #message .thanks {
     display: block;
     background-size: 200px;
     height: 200px;
-    width: 100%;
+    width: 40%;
+    float: left;
   }
   #contribute-badge:hover {
     -webkit-transform: none;
   }
   .sign-up {
-    top: 0;
+    top: 25px;
+    float: left;
+    margin-bottom: 50px;
   }
 }
 
@@ -685,5 +690,12 @@ body.thanks #message .thanks {
     margin-left: auto;
     margin-right: auto;
     width: 285px;
+  }
+  #contribute-badge {
+    width: 100%;
+    float: none;
+  }
+  .sign-up {
+    float: none;
   }
 }
