@@ -645,6 +645,7 @@ body.thanks #message .thanks {
   }
   .content {
     margin-top: 10px;
+    width: 100%;
   }
 }
 @media only screen and (max-width:770px) {
