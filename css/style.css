@@ -680,6 +680,9 @@ body.thanks #message .thanks {
     width: 100%;
     min-height: 0;
   }
+  .sidebar {
+    margin-left: 0;
+    }
   #contribute-badge {
     -webkit-transform: none;
     top: 0;
