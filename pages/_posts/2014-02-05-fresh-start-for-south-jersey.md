@@ -16,6 +16,27 @@ css: |
       color: white;
       display: inline;
       }
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px; height: 0; overflow: hidden;
+        margin-bottom: 20px;
+        }
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
+    @media only screen and (max-width:640px) {
+      .share-links h3 {
+        display: block;
+        } 
+    }
+
 head: |
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@davecolenj">
@@ -30,8 +51,8 @@ head: |
     <meta property="og:video" content="http://www.youtube.com/v/qvA6DrZaD7U">
     <meta property="og:description" content="Watch Dave Cole kick off his campaign for Congress in New Jersey's 2nd District. Join me in supporting his campaign for a Fresh Start in South Jersey!" />
 ---
-
-<iframe width="548" height="308" src="//www.youtube.com/embed/qvA6DrZaD7U?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+<div class="video-container">
+<iframe width="548" height="308" src="//www.youtube.com/embed/qvA6DrZaD7U?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe></div>
 
 <div class="share-links">
   <h3>SHARE THIS: </h3>

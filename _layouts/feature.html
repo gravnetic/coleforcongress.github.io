@@ -19,7 +19,7 @@ layout: default
   <div id="menu"><div class="grid"><div class="col8 pad1x mobile-cols">
     <a class="item donate show-tablet hide-phone" href="https://www.coleforcongress.com/contribute">Contribute</a>
     {% for post in site.categories.landing reversed %}
-    <a class="item" href="{{post.url}}">{{post.title}}</a>
+    <a class="item {%if forloop.index > 2%}hide-mobile{% endif ®%}" href="{{post.url}}">{{post.title}}</a>
     {% endfor %}
   </div></div></div>
   <div class="grid clearfix">
