@@ -6,7 +6,7 @@ class: about
 sidebar: |
   <h2>Dave's Experience</h2>
   <ul>
-    <li>Successful entrepreneur and software engineer, part of a team that built and grew a popular technology startup</li>
+    <li>Successful entrepreneur and software engineer, helped build and grow a popular technology startup</li>
     <li>Served as a Senior Advisor for Technology at the White House, worked to make government more efficient and responsive</li>
     <li>Organized volunteers across New Jersey in support of Barack Obama's 2008 campaign</li>
     <li>South Jersey born and raised, Rutgers and Clearview graduate, lives in Mantua Township</li>

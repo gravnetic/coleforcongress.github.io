@@ -1,6 +1,6 @@
 ---
 layout: feature
-quote: Everyone who wants a job should be able to find one. And everyone who works hard should be able to provide for their families. That's a strong middle class, and it's what I'm fighting for.
+quote: Everyone who wants a job should be able to find one. And everyone who works hard should be able to provide for their families. That's a strong middle class, and it's why I'm running for Congress.
 byline: "<a href='/fresh-start' class='button'>Watch Video</a>"
 ---
 
