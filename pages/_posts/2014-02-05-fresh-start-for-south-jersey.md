@@ -47,7 +47,7 @@ head: |
     <meta property="og:title" content="Dave Cole Announces Campaign for Congress" />
     <meta property="og:type" content="article" />
     <meta property="og:image" content="http://coleforcongress.com/img/social/video-share.jpg" />
-    <meta property="og:url" content="http://coleforcongress.com/fresh-start/" />
+    <meta property="og:url" content="http://coleforcongress.com/fresh-start" />
     <meta property="og:video" content="http://www.youtube.com/v/qvA6DrZaD7U">
     <meta property="og:description" content="Watch Dave Cole kick off his campaign for Congress in New Jersey's 2nd District. Join me in supporting his campaign for a Fresh Start in South Jersey!" />
 ---
@@ -57,7 +57,7 @@ head: |
 <div class="share-links">
   <h3>SHARE THIS: </h3>
   <a target="_blank" href="mailto:?subject=Watch%3A%20Dave%20Cole%20Announces%20Campaign%20for%20Congress%20in%20NJ&amp;body=Dave%20Cole%20announced%20he%20is%20running%20for%20Congress%20in%20New%20Jersey's%202nd%20District.%20%0D%0A%0D%0AJoin%20me%20in%20supporting%20his%20campaign%20for%20a%20Fresh%20Start%20in%20South%20Jersey!%20%0D%0A%0D%0AWatch%20the%20video%20at%20his%20website%20to%20learn%20more%3A%20http%3A%2F%2Fcoleforcongress.com%2Ffresh-start" class="icon mail button">Email</a>
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://coleforcongress.com/fresh-start/" target="_blank" class="icon facebook button">Facebook</a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://coleforcongress.com/fresh-start" target="_blank" class="icon facebook button">Facebook</a>
   <a href="https://twitter.com/intent/tweet?text=Watch%20%40DaveColeNJ%20kick%20off%20his%20campaign%20for%20Congress%20(NJ-2).%20A%20Fresh%20Start%20for%20%23SouthJersey!%20http%3A%2F%2Fcoleforcongress.com%2Ffresh-start" target="_blank" class="icon twitter button">Twitter</a>
 </div>
 
