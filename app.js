@@ -12,6 +12,11 @@ app.get('/', function(req, res) {
     res.redirect(301, 'http://coleforcongress.com');
 });
 
+app.get('/fresh-start', function(req, res) {
+    res.redirect(301, 'http://coleforcongress.com/fresh-start');
+});
+
+
 app.use(function(req, res, next) {
     var host = req.headers.host;
     host = (host.substr(0, 4) !== 'www.') ? 'www.' + host : host;
