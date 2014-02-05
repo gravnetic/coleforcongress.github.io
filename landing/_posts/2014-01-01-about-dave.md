@@ -17,7 +17,7 @@ sidebar: |
 
 Dave Cole is an entrepreneur and an engineer, with experience growing businesses in the private sector and modernizing technology as a public servant.
 
-As an early member of a new tech company, MapBox, Dave entered a dynamic technology market and helped grow the company from a half dozen employees to more than 50 in just over two years. MapBox now competes head-to-head with some of the biggest tech giants — Google, Nokia, and Microsoft among others — and delivers its product through cutting-edge applications to millions of users.
+As an early member of a new tech company, MapBox, Dave entered a dynamic technology market and helped grow the company from a half dozen employees to more than 50 in just over two years. MapBox now competes head-to-head with some of the biggest tech giants and delivers its product through cutting-edge applications to millions of users.
 
 The hard work and determination that made Dave successful in business are values he learned growing up in South Jersey. Dave’s mother brought up Dave and his sister to be conscientious citizens who believed in family and service. An entrepreneur herself, she raised her family while managing her business as a single mother following the passing of Dave’s father.
 

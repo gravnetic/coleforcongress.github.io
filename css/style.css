@@ -93,6 +93,25 @@ h2 {
   color: #303e48;
   margin-left: 50px;
   }
+#quote a.button {
+  background: #91c0eb;
+  color: #303e48;
+  font-family: Podkova;
+  font-weight: 900;
+  font-size: 24px;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  -moz-transition: background-color 0.2s, color 0.2s;
+  -o-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  padding: 10px 20px;
+  }
+#quote a.button:hover {
+  color: #fff;
+  background-color: #f93348;
+  }
 #quote p {
   position: relative;
   }
@@ -240,6 +259,7 @@ h2 {
   color: #fff;
   background-color: #00b3e3;
   }
+.sign-up input[type="email"],
 .sign-up input[type="text"] {
   height: auto;
   width: 196px;

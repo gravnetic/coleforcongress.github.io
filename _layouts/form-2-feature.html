@@ -1,0 +1,123 @@
+---
+layout: page
+---
+<style>
+  .fieldset-wrapper .form-item {
+    width: 100%;
+    margin: 0;
+    }
+  fieldset input[type="text"],
+  fieldset input[type="tel"],
+  fieldset input[type="email"],
+  fieldset textarea,
+  fieldset select {
+    width: 100%;
+    height: 46px;
+    font-size: 14px;
+    padding: 14px;
+    color: #303e48;
+    font-family: Montserrat;
+    border: 1px solid #c2cfd3;
+    }
+  #edit-interests .fieldset-legend {
+    padding-bottom: 20px;
+    }
+  .fieldset-wrapper .form-type-checkbox input {
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+    float: left;
+    margin-left: 0;
+    }
+  .fieldset-wrapper .form-type-checkbox label {
+    margin: 0px;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Montserrat;
+    margin-top: 1px;
+    }
+  .fieldset-wrapper .form-item.form-type-textarea textarea {
+    height: 138px;
+    }
+  .fieldset-wrapper .form-item.form-type-textarea {
+    width: 100%;
+    }
+  form fieldset label {
+    font-family: Podkova;
+    font-weight: 900;
+    font-size: 16px;
+    display: block;
+    margin: 20px 0 0px 0px;
+    }
+  form label span.form-required {
+    color: #f93348;
+    float: left;
+    }
+  .fieldset-legend {
+    font-family: Podkova;
+    font-size: 24px;
+    padding-top: 40px;
+    display: block;
+    }
+  #edit-submitform {
+    height: 46px;
+    background: #91c0eb;
+    color: #303e48;
+    font-family: Podkova;
+    font-weight: 900;
+    font-size: 24px;
+    -webkit-transition: background-color 0.2s, color 0.2s;
+    -moz-transition: background-color 0.2s, color 0.2s;
+    -o-transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.2s, color 0.2s;
+    text-transform: uppercase;
+    width: 206px;
+    margin: 32px 0 40px;
+    border: none;
+    border-radius: 0;
+    }
+  .ngp-form.nv-template-minimal {
+    box-shadow: 0 0 10px 5px rgba(143, 143, 143, 0.15);
+    padding: 0 32px;
+    border: 1px solid rgba(255,255,255,.1);
+    background: rgba(255,255,255,0.25);
+    color: white;
+    }
+  #edit-submitform:hover {
+    color: #fff;
+    background-color: #f93348;
+    }
+  #edit-customfields legend { display: none; }
+  .alert-error:first-child {
+    margin-top: 40px;
+    }
+  .alert-error {
+    color: #f93348;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Montserrat;
+    margin: 4px 0;
+    background: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    }
+  .alert-error a {
+    display: none;
+    }
+  .thankYou {
+    padding-top: 40px;
+    }
+</style>
+<div class="col12" style="padding-bottom: 60px;">
+  {{page.feature}}
+</div>
+<div class="col7" style="padding-bottom: 60px;">
+  {{content}}
+</div>
+<div class="margin1 col4 sidebar">
+  <script type="text/javascript" src="//d1aqhv4sn5kxtx.cloudfront.net/nvtag.js"></script>
+  <noscript>
+    <iframe frameborder="0" style="width: 100%; height: 650px;" src="https://act.myngp.com/Forms/{{page.form}}"></iframe>
+  </noscript>
+  <div class="ngp-form" data-id="{{page.form}}" data-inline-errors="false" data-template="minimal"></div>
+</div>

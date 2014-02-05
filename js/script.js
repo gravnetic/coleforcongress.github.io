@@ -29,6 +29,9 @@ $(function() {
             $('body').removeClass('thanks');
         }, 30000);
     }
+
+    /* Email validation */
+    $('input.zip').payment('restrictNumeric');
 });
 
 Array.prototype.move = function(from, to) {
