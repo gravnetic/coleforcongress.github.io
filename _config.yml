@@ -3,3 +3,11 @@ permalink: pretty
 markdown: rdiscount
 rdiscount:
   extensions: [generate_toc, smart]
+
+exclude:
+  - readme.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - script
+  - CNAME
