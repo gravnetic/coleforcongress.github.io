@@ -12,8 +12,9 @@ sidebar: |
     <li>South Jersey born and raised, Rutgers and Clearview graduate, lives in Mantua Township</li>
   </ul>
 ---
-![Dave Cole](/img/dave-full.jpg)
-<div class="hi-res"><a href="/img/dave-cole-hi-res-4x3.png" target="_blank">Download Hi-Res</a></div>
+<div class="video-container"><iframe width="548" height="308" src="//www.youtube.com/embed/qvA6DrZaD7U?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+
+<div class="hi-res"><a href="/img/dave-cole-hi-res-4x3.png" target="_blank">Download Hi-Res Photo</a></div>
 
 Dave Cole is an entrepreneur and an engineer, with experience growing businesses in the private sector and modernizing technology as a public servant.
 

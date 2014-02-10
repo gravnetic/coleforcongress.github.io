@@ -1,0 +1,96 @@
+---
+layout: page
+css: |
+    .clear {clear: both;}
+    .sign-up-container,
+    #header-social,
+    #menu {
+      display: none;
+      }
+    #container .bg {
+      padding-top: 1px;
+      }
+    a.donate {
+      font-family: 'League Gothic';
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: 33px;
+      background: #f93348;
+      color: white;
+      display: inline-block;
+      padding: 14px 20px;
+      border: 2px white solid;
+      -webkit-transition: background-color 0.2s, color 0.2s;
+      -moz-transition: background-color 0.2s, color 0.2s;
+      -o-transition: background-color 0.2s, color 0.2s;
+      transition: background-color 0.2s, color 0.2s;
+      }
+    .social iframe {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: top;
+      }
+    .social {
+      padding-top: 20px;
+      }
+    #edit-contactinformation legend { display: none; }
+    .fieldset-wrapper .form-item {
+      width: 48% !important;
+      margin-right: 2% !important;
+      float: left;
+      }
+permalink: /quick-start
+---
+
+<div class="margin2 col8 pad2y">
+  <h2 class="center">How will you help?</h2>
+  <p>Ready to help Dave's campaign for Congress? Here's a quick list of things you can do right now that will have a significant impact on our success.</p>
+<p><a href="/about" target="_blank">Learn more about Dave and his campaign, and watch his announcement video here</a>.</p></div>
+
+<div class="col8 pad2y">
+  <h2 class="">1. Get email updates</h2>
+  <p>Sign up to receive email updates from our campaign. It's the best way to stay informed and engaged.</p>
+
+  <script>
+    var nvtag_callbacks = nvtag_callbacks || {};
+    nvtag_callbacks.alterFormDefinition = nvtag_callbacks.alterFormDefinition || [];
+    nvtag_callbacks.alterFormDefinition.push(moveIt);
+    
+    function moveIt(args) {
+      console.log(args);
+      args.form_definition.form_elements[0].children.move(1, 0);
+      return args;
+    }
+  </script>
+  {% include form.html form="1917970491306409984" %}
+</div>
+<div class="col8 pad2y">
+  <h2 class="">2. Make a contribution</h2>
+  <p>Our campaign is funded by the generous contributions of our friends and grassroots supports. Will you donate now? Our average contribution is $100, but please give what you can.</p>
+  <a class="donate" href="https://www.coleforcongress.com/contribute">Contribute</a>
+</div>
+
+<div class="col8 pad2y">
+  <h2 class="">3. Get social</h2>
+  Like us on Facebook and follow us on Twitter to show your support and share campaign updates with your friends.
+  <div class="social">{% include social.html %}</div>
+</div>
+<div class="col8 pad2y">
+  <h2 class="">4. Share with friends</h2>
+  <p>Use email, Facebook, and Twitter to tell your friends about our campaign.</p>
+  <div class="share-links">
+    <a target="_blank" href="mailto:?subject=Watch%3A%20Dave%20Cole%20Announces%20Campaign%20for%20Congress%20in%20NJ&amp;body=Dave%20Cole%20announced%20he%20is%20running%20for%20Congress%20in%20New%20Jersey's%202nd%20District.%20%0D%0A%0D%0AJoin%20me%20in%20supporting%20his%20campaign%20for%20a%20Fresh%20Start%20in%20South%20Jersey!%20%0D%0A%0D%0AWatch%20the%20video%20at%20his%20website%20to%20learn%20more%3A%20http%3A%2F%2Fcoleforcongress.com%2Ffresh-start" class="icon mail button">Email</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http://coleforcongress.com/fresh-start/" target="_blank" class="icon facebook button">Facebook</a>
+    <a href="https://twitter.com/intent/tweet?text=Watch%20%40DaveColeNJ%20kick%20off%20his%20campaign%20for%20Congress%20(NJ-2).%20A%20Fresh%20Start%20for%20%23SouthJersey!%20http%3A%2F%2Fcoleforcongress.com%2Ffresh-start" target="_blank" class="icon twitter button">Twitter</a>
+  </div>
+
+</div>
+<div class="col8 pad2y">
+  <h2 class="">5. Get Involved</h2>
+  <p>Can you help us make phone calls or knock on doors to recruit volunteers and sign up supporters?</p>
+  <p><a href="/get-involved">Get involved »</a></p>
+
+ <p>Do you have a story about how the economy, health care, or another key issue is impacting your life?</p>
+  <p><a href="/share-your-story">Share your story »</a></p>
+  <div class="pad2y"></div>
+</div>

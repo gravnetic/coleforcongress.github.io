@@ -16,21 +16,6 @@ css: |
       color: white;
       display: inline;
       }
-    .video-container {
-        position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 30px; height: 0; overflow: hidden;
-        margin-bottom: 20px;
-        }
-    .video-container iframe,
-    .video-container object,
-    .video-container embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        }
     @media only screen and (max-width:640px) {
       .share-links h3 {
         display: block;
