@@ -1,6 +1,6 @@
 $(function() {
     if (window.location.hash === '#contribute') {
-        window.location = 'https://www.coleforcongress.com/contribute';
+        window.location = '/contribute';
     }
 
     // OFA form
