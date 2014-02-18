@@ -2,6 +2,7 @@
 layout: form
 form: 3645382423379705856
 permalink: /share-your-story
+categories: landing
 css: |
   #edit-contactinformation {
     padding-top: 20px;

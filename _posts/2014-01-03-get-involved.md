@@ -2,6 +2,7 @@
 layout: form
 form: -3704773643465654272
 permalink: /get-involved
+categories: landing
 ---
 
 ## Join the team

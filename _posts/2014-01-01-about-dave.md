@@ -2,6 +2,7 @@
 layout: page
 title: About Dave
 permalink: about
+categories: landing
 class: about
 sidebar: |
   <h2>Dave's Experience</h2>
