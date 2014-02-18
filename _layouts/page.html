@@ -29,7 +29,7 @@ layout: default
 </div>
 <div id="container"><div class="bg">
   <div id="menu"><div class="grid"><div class="col12">
-    {% for post in site.categories.landing reversed %}<a class="item {%if page.id == post.id %}active{% endif %} {%if forloop.index != 1%}hide-mobile{% endif %}" href="{{post.url}}">{{post.title}}</a>{% endfor %}<a class="item donate" href="https://www.coleforcongress.com/contribute">Contribute</a>
+    {% for post in site.categories.landing reversed %}<a class="item {%if page.id == post.id %}active{% endif %} {%if forloop.index != 1%}hide-mobile{% endif %}" href="{{post.url}}">{{post.title}}</a>{% endfor %}<a class="item donate" href="/contribute">Contribute</a>
   </div></div></div>
   <div class="grid clearfix">
     <div class="{% if page.sidebar %}col7 {% endif %}content prose pad1x">
