@@ -12,13 +12,3 @@ Campaign website
 ## Testing
 
 `script/cibuild`
-
-## todo
-
-- mobile reflow
-- retina images
-+ optimize images
-- connect donation form
-- connect email signup
-- xbrowse
-- fallback fonts
