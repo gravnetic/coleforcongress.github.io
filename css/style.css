@@ -284,7 +284,8 @@ h2 {
   padding-bottom: 0;
   text-align: right;
   }
-#header .sign-up input[type="text"] {
+#header .sign-up input[type="text"],
+#header .sign-up input[type="email"] {
   font-size: 12px;
   padding: 10px 6px;
   }
@@ -654,20 +655,35 @@ body.thanks #message .thanks {
   }
 
 .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; overflow: hidden;
-    margin-bottom: 20px;
-    }
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+  margin-bottom: 20px;
+  }
 .video-container iframe,
 .video-container object,
 .video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+
+.icon.check:after, .icon.check:before {
+  background-position: -755px 0;
+  }
+
+.email-thanks {
+  padding-top: 10px;
+  }
+#header .email-thanks {
+  padding-top: 10px;
+  text-align: right;
+  }
+#sidebar #mc-embedded-subscribe-form {
+  height: 52px;
+  }
 
 /* Responsiveness */
 
