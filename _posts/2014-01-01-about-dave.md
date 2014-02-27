@@ -5,6 +5,10 @@ permalink: about
 categories: landing
 class: about
 sidebar: |
+  <div class="hi-res">
+  <div><a href="/img/dave-cole-hi-res-4x3.png" target="_blank">Download Hi-Res Photo</a></div>
+  <div><a href="mailto:info@coleforcongress.com" target="_blank">Press and general questions</a></div>
+  </div>
   <h2>Dave's Experience</h2>
   <ul>
     <li>Successful entrepreneur and software engineer, helped build and grow a popular technology startup</li>
@@ -12,10 +16,12 @@ sidebar: |
     <li>Organized volunteers across New Jersey in support of Barack Obama's 2008 campaign</li>
     <li>South Jersey born and raised, Rutgers and Clearview graduate, lives in Mantua Township</li>
   </ul>
+css: |
+  .hi-res { margin-top: 0; }
+  .sidebar h2 { margin-top: 40px; }
+  .video-container { margin-bottom: 40px; }
 ---
 <div class="video-container"><iframe width="548" height="308" src="//www.youtube.com/embed/qvA6DrZaD7U?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe></div>
-
-<div class="hi-res"><a href="/img/dave-cole-hi-res-4x3.png" target="_blank">Download Hi-Res Photo</a></div>
 
 Dave Cole is an entrepreneur and an engineer, with experience growing businesses in the private sector and modernizing technology as a public servant.
 

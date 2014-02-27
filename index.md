@@ -1,7 +1,7 @@
 ---
 layout: feature
-quote: Everyone who wants a job should be able to find one. And everyone who works hard should be able to provide for their families. That's a strong middle class, and it's why I'm running for Congress.
-byline: "<a href='/fresh-start' class='button'>Watch Video</a>"
+quote: As an engineer, I am ultimately judged on results — the product I ship — and not just what I say. If you believe Congress should hold themselves to this same standard, join my campaign.
+byline: Dave Cole
 ---
 
 ## A Fresh Start for South Jersey
