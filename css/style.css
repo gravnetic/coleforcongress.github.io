@@ -42,7 +42,10 @@ body.contribute .content {
 .relative {
   position: relative;
   }
-h2 {
+h1 {
+  font-size: 45px;
+  }
+h1, h2 {
   font-size: 37px;
   font-family: 'League Gothic';
   text-transform: uppercase;
