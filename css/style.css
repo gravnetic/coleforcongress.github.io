@@ -42,9 +42,6 @@ body.contribute .content {
 .relative {
   position: relative;
   }
-h1 {
-  font-size: 45px;
-  }
 h1, h2 {
   font-size: 37px;
   font-family: 'League Gothic';
@@ -53,6 +50,9 @@ h1, h2 {
   color: white;
   font-weight: normal;
   line-height: 1;
+  }
+h1 {
+  font-size: 45px;
   }
 .prose p {
   margin-bottom: 25px;
