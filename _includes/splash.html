@@ -22,18 +22,18 @@
     margin-left: 0;
     margin-bottom: 40px;
     }
-  .icon.big.x {
+  .splash-fill .icon.big.x {
     position: absolute;
     top:  0;
     right: 0;
     }
-  .form-type-textfield {
+  .splash-container .form-type-textfield {
     float: left;
     box-sizing: border-box;
     width: 50% !important;
     padding-right: 5px !important;
     }
-  .form-item-PostalCode {
+  .splash-container .form-item-PostalCode {
     padding-left: 5px !important;
     padding-right: 0 !important;
     }
@@ -45,7 +45,7 @@
     width: auto !important;
     padding: 0 20px !important;
     }
-  .continue-link {
+  .splash-container .continue-link {
     position: absolute;
     right: 40px;
     bottom: 20px;
@@ -113,7 +113,7 @@
     .splash-container input {
       font-size: 12px!important;
       }
-    .continue-link {
+    .splash-container .continue-link {
       position: static;
       padding-bottom: 40px;
       display: block;
@@ -156,15 +156,6 @@
 
 <script src="{{site.baseurl}}js/lib/cookies.js"></script>
 <script>
-  var nvtag_callbacks = nvtag_callbacks || {};
-  nvtag_callbacks.alterFormDefinition = nvtag_callbacks.alterFormDefinition || [];
-  nvtag_callbacks.alterFormDefinition.push(moveIt);
-  
-  function moveIt(args) {
-    args.form_definition.form_elements[0].children.move(1, 0);
-    return args;
-  }
-
   $(function() {
       $('a[href="#close"]').click(function() {
           window.scrollTo(0, 0);
