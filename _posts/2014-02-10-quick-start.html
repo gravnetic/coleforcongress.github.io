@@ -56,7 +56,6 @@ permalink: /quick-start
     nvtag_callbacks.alterFormDefinition.push(moveIt);
     
     function moveIt(args) {
-      console.log(args);
       args.form_definition.form_elements[0].children.move(1, 0);
       return args;
     }

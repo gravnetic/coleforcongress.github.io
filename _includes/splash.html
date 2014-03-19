@@ -1,0 +1,194 @@
+<style>
+  .splash-fill.active {
+    display: block;
+    }
+  .splash-fill {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255,255,255,0.95);
+    }
+  .splash-container {
+    margin-top: 100px;
+    background: url(http://coleforcongress.com/img/dave-full.jpg) -140px 0;
+    box-shadow: 0 0 10px 5px rgba(143, 143, 143, 0.15);
+    position: relative;
+    }
+  .feature-quote {
+    color: white;
+    margin-left: 0;
+    margin-bottom: 40px;
+    }
+  .icon.big.x {
+    position: absolute;
+    top:  0;
+    right: 0;
+    }
+  .form-type-textfield {
+    float: left;
+    box-sizing: border-box;
+    width: 50% !important;
+    padding-right: 5px !important;
+    }
+  .form-item-PostalCode {
+    padding-left: 5px !important;
+    padding-right: 0 !important;
+    }
+  #edit-contactinformation legend {
+    display: none;
+    }
+  #edit-submitform {
+    margin-top: 0 !important;
+    width: auto !important;
+    padding: 0 20px !important;
+    }
+  .continue-link {
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+    color: white;
+    }
+  .splash-container .sign-up,
+  .splash-container .sign-up > div {
+    border: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    }
+  .splash-container .sign-up {
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px 5px rgba(143, 143, 143, 0.15);
+    padding: 32px;
+    border: 1px solid rgba(255,255,255,.1);
+    background: rgba(255,255,255,0.25);
+    }
+  .splash-container #mc_embed_signup {
+    width: auto;
+    }
+  .splash-container .sign-up input[type="email"],
+  .splash-container .sign-up input[type="text"] {
+    padding: 14px;
+    }
+  .splash-container .sign-up input[type="email"] {
+    width: 150px !important;
+    }
+  @media only screen and (max-width:1005px) {
+    .splash-container {
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 50px;
+      width: 80%;
+      }
+  }
+  @media only screen and (max-width:840px) {
+    .splash-container {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 40px;
+      width: 90%;
+      }
+  }
+  @media only screen and (max-width:840px) {
+    .splash-container {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 40px;
+      width: 90%;
+      }
+  }
+  @media only screen and (max-width:750px) {
+    .splash-container .sign-up {
+      padding: 10px;
+      }
+  }
+  @media only screen and (max-width:640px) {
+    .splash-container {
+      background-position: top right;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      }
+    .splash-container input {
+      font-size: 12px!important;
+      }
+    .continue-link {
+      position: static;
+      padding-bottom: 40px;
+      display: block;
+      }
+  }
+  @media only screen and (max-width:400px) {
+    .splash-container {
+      margin: 0;
+      padding-top: 40px;
+      width: 100%;
+      height: 100%;
+      }
+  }
+
+</style>
+
+<div class="splash-fill">
+  <div class="splash-container margin2 col8 pad2">
+    <a class="icon big x dark" href="#close"></a>
+    <div class="col7 pad2x pad4y margin5">
+      <div class="feature-quote text-right">
+        <p>“The Cole campaign feels like a glimpse into the future of politics.” — WIRED.com</p>
+      </div>
+      <h2>JOIN our CAMPAIGN</h2>
+      <div class="sign-up">
+        <div id="mc_embed_signup">
+        <form action="http://api.myngp.com/v2/Forms/1917970491306409984" method="post" id="mc-embedded-subscribe-form-splash" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+          <input type="email" value="" required name="EmailAddress" class="required email" placeholder="EMAIL ADDRESS" id="mce-EMAIL"><!--
+          --><input type="text" value="" required placeholder="ZIP" name="PostalCode" class="required zip" id="mce-ZIP"><!--
+          --><input type="submit" value="Go" name="subscribe" id="mc-embedded-subscribe">
+            <input type="hidden" name="YesSignMeUpForUpdatesForBinder" value="true">
+            <input type="hidden" name="type" value="SignupForm">
+        </form>
+        </div>
+      </div>
+      <a href="#close" class="continue-link">Continue to website</p>
+    </div>
+  </div>
+</div>
+
+<script src="{{site.baseurl}}js/lib/cookies.js"></script>
+<script>
+  var nvtag_callbacks = nvtag_callbacks || {};
+  nvtag_callbacks.alterFormDefinition = nvtag_callbacks.alterFormDefinition || [];
+  nvtag_callbacks.alterFormDefinition.push(moveIt);
+  
+  function moveIt(args) {
+    args.form_definition.form_elements[0].children.move(1, 0);
+    return args;
+  }
+
+  $(function() {
+      $('a[href="#close"]').click(function() {
+          window.scrollTo(0, 0);
+          $('.splash-fill').fadeOut(200);
+          Cookies.set('splash', 'true', { expires: 60 * 60 * 24 * 30 });
+          return false;
+      });
+
+      $('#mc-embedded-subscribe-form-splash').submit(function(e) {
+          var $form = $(this);
+          $.ajax({
+              type: 'POST',
+              url: $form.attr('action'),
+              data: $form.serialize(),
+              complete: function() {
+                  $form.html('<div class="email-thanks dark"><span class="icon check"></span><span>Thanks for signing up.<span></div>');
+                  $('a[href="#close"]').click();
+              }
+          });
+          return false;
+      });
+
+      if (Cookies.get('splash') !== 'true') {
+          $('.splash-fill').addClass('active');
+      }
+  });
+</script>
