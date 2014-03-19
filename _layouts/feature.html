@@ -18,9 +18,7 @@ layout: default
 <div id="container"><div class="bg">
   <div id="menu"><div class="grid"><div class="col8 pad1x mobile-cols">
     <a class="item donate show-tablet hide-phone" href="/contribute">Contribute</a>
-    {% for post in site.categories.landing reversed %}
-    <a class="item {%if forloop.index > 2%}hide-mobile{% endif ®%}" href="{{post.url}}">{{post.title}}</a>
-    {% endfor %}
+    {% for post in site.categories.landing reversed %}<a class="item {%if forloop.index > 2%}hide-mobile{% endif ®%}" href="{{post.url}}">{{post.title}}</a>{% endfor %}<a class="item" href="/issues/">Issues</a>
   </div></div></div>
   <div class="grid clearfix">
     <div class="col7 content prose dark pad1x">
