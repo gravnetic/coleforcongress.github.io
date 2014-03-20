@@ -13,3 +13,7 @@ Campaign website
 
 `script/cibuild`
 
+
+## License
+
+The markdown content (any file ending with a `.md` extension) in this website is freely licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). All other files are released under [the MIT license](http://opensource.org/licenses/MIT), Copyright (c) 2014 Cole for Congress.
