@@ -210,6 +210,10 @@ h1 {
   position: relative;
   left: 2px;
   }
+/* Hack to make the form box look better on Firefox 3.0+ */
+#mc_embed_signup, x:-moz-any-link, x:default {
+  width: 250px;
+}
 #mce-EMAIL {
   width: 133px;
   }
@@ -296,6 +300,11 @@ h1 {
 #header .sign-up #mc-embedded-subscribe {
   height: 40px;
   }
+/* Hack to make the form box look better on Firefox 3.0+ */
+#header .sign-up #mc-embedded-subscribe, x:-moz-any-link, x:default {
+  height: 36px;
+  padding: 6px 10px;
+}
 
 #header #mc_embed_signup {
   border: none;
