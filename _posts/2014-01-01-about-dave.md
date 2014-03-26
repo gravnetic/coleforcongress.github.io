@@ -33,6 +33,6 @@ When Dave left home to go to Rutgers University, he served twice as the Presiden
 
 In 2007, Dave continued on a path of public service to organize the volunteer effort for President Barack Obama’s campaign in New Jersey. After over a year of campaigning in many states, Dave was appointed to the White House where he served during President Obama’s first term, and used innovative technology to make government more efficient and responsive to the needs of citizens across the country.
 
-Dave is exploring entering the race to represent South Jersey because this is home — to his wife and him, to his mother and his sister, to his large family that spans the district, and to the thousands of hard-working women and men that drive the local economy and make this such a great community to live in and raise a family. 
+Dave is running to represent South Jersey because this is home — to his wife and him, to his mother and his sister, to his large family that spans the district, and to the thousands of hard-working women and men that drive the local economy and make this such a great community to live in and raise a family. 
 
 Dave has been given many chances to serve, and he has grasped those opportunities and the values he grew up with to build a career of service, working to tackle tough challenges and win. He knows what it takes to grow a business and create jobs, and would put his experience and record of delivering innovative solutions to work for the people of South Jersey.
