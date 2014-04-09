@@ -20,9 +20,9 @@ head: |
 
 I support the Congressional Progressive Caucus budget, and call on those who want to represent us in Congress to do the same.
 
-Republicans propose cutting Social Security, Medicare, and Medicaid benefits – all while lowering taxes on millionaires and giant corporations.
+Congressman LoBiondo's party proposes cutting Social Security, Medicare, and Medicaid benefits – all while lowering taxes on millionaires and giant corporations.
 
-**The right tries to dominate the news around April 15 tax day. But this year, I’m standing with other bold progressive candidates and going on offense!**
+**Congressional Republicans try to dominate the news around April 15 tax day. But this year, I’m standing with other bold progressive candidates and going on offense!**
 
 Add your name so Rep. LoBiondo hears the message loud and clear: "Demand millionaires and corporations pay their fair share!"
 
