@@ -1,5 +1,5 @@
 ---
-layout: form-2
+layout: form-1
 permalink: /fair-share
 form: 8053843508622000128
 css: |
