@@ -2,10 +2,6 @@
 layout: form
 permalink: /fair-share
 form: 8053843508622000128
-css: |
-  .col7 {
-  width:100%;
-  }
 head: |
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@davecolenj">
