@@ -2,8 +2,7 @@
 layout: page
 permalink: /fair-share-share
 css: |
-  .col-7 {
-  width:100%;
+  .col7 {  width:100%;
   }
 head: |
   <meta name="twitter:card" content="summary_large_image">
