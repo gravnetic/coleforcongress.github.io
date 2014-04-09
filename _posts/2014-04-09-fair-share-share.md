@@ -1,17 +1,7 @@
 ---
 layout: page
 permalink: /fair-share-share
-css: |
-head: |
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@davecolenj">
-    <meta name="twitter:title" content="Paying your fair share">
-    <meta name="twitter:description" content="Demand that millionaires and giant corporations pay their fair share of taxes">
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://coleforcongress.com/fair-share/" />
-    <meta property="og:description" content="Demand that millionaires and giant corporations pay their fair share of taxes" />
 ---
-
 
 ## Thank you!
 
