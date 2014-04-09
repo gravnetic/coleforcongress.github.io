@@ -5,6 +5,15 @@ css: |
   .col-7 {
   width:100%;
   }
+  #donatebutton {
+  color: white;
+  display: inline-block;
+  padding: 0 20px;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  -moz-transition: background-color 0.2s, color 0.2s;
+  -o-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+  }
 head: |
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@davecolenj">
@@ -26,4 +35,4 @@ Share this petition and ask everyone you know to sign. We can make real progress
   
 Once you’ve shared, help our campaign push this even further with a donation of $5 or more:
 
-<a class="item donate" href="/contribute">Contribute</a>
+<a class="item donate" id="donatebutton" href="/contribute">Contribute</a>
