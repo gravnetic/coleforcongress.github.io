@@ -1,9 +1,6 @@
 ---
 layout: page
 permalink: /fair-share-share
-css: |
-  .col7 {  width:100%;
-  }
 head: |
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@davecolenj">
