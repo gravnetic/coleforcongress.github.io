@@ -1,3 +1,4 @@
+---
 layout: page
 permalink: /fair-share-share
 css: |
@@ -12,12 +13,6 @@ head: |
   <meta property="og:type" content="article" />
   <meta property="og:url" content="http://coleforcongress.com/fair-share/" />
   <meta property="og:description" content="Demand that millionaires and giant corporations pay their fair share of taxes" />
-sidebar: |
-  <h2>SHARE THIS</h2>
-  <div class="pad2y">
-  </div>
-  <h2>DONATE</h2>
-  
 ---
 
 ## Thank you!
