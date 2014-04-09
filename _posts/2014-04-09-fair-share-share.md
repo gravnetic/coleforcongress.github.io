@@ -23,4 +23,5 @@ We can get our economy back on track and require that millionaires to pay their 
   
 Once you’ve shared, help our campaign push this even further with a donation of $5 or more:
 
-<a  style="font-weight:bold;background: #f93348;color: white;float:none;display: inline-block;padding: 20px;-webkit-transition:background-color 0.2s, color 0.2s;  -moz-transition: background-color 0.2s, color 0.2s; -o-transition: background-color 0.2s, color 0.2s;  transition: background-color 0.2s, color 0.2s;"="donatebutton" href="/contribute">Contribute</a>
+<a  style="font-weight:bold;background: #f93348;color: white;float:none;display: inline-block;padding: 20px;-webkit-transition:background-color 0.2s, color 0.2s;  -moz-transition: background-color 0.2s, color 0.2s; -o-transition: background-color 0.2s, color 0.2s;  transition: background-color 0.2s, color 0.2s;"  href="/contribute">Contribute</a>
+
