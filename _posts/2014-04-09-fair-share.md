@@ -3,7 +3,7 @@ layout: form
 permalink: /fair-share
 form: 8053843508622000128
 css: |
-  .col-7 {
+  .col7 {
   width:100%;
   }
 head: |
