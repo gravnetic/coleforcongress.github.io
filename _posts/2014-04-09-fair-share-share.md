@@ -17,7 +17,7 @@ We can get our economy back on track and require that millionaires to pay their 
 
 *Share this petition and ask everyone you know to sign.* We can make real progress if we work together.
 
-<a target="_blank" href="mailto:?subject=Paying%20their%20fair%20share&amp;body=Demand%20that%20millionaires%20and%20giant%20corporations%20pay%20their%20fair%20share%20of%20taxes%20and%20sign%20Dave's%20petition" class="icon mail button">Email</a>
+<a target="_blank" href="mailto:?subject=Paying%20their%20fair%20share&amp;body=Demand%20that%20millionaires%20and%20giant%20corporations%20pay%20their%20fair%20share%20of%20taxes%20and%20sign%20Dave's%20petition:http://coleforcongress.com/fair-share/" class="icon mail button">Email</a>
   <a href="https://www.facebook.com/sharer/sharer.php?u=http://coleforcongress.com/fair-share/" target="_blank" class="icon facebook button">Facebook</a>
   <a href="https://twitter.com/intent/tweet?text=Demand%20that%20millionaires%20and%20giant%20corporations%20pay%20their%20fair%20share%20of%20taxes%20and%20sign%20Dave's%20petition:http://coleforcongress.com/fair-share" target="_blank" class="icon twitter button">Twitter</a>
   
