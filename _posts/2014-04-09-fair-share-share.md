@@ -1,15 +1,17 @@
 ---
 layout: page
 permalink: /fair-share-share
+css: |
 head: |
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@davecolenj">
-  <meta name="twitter:title" content="Paying your fair share">
-  <meta name="twitter:description" content="Demand that millionaires and giant corporations pay their fair share of taxes">
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="http://coleforcongress.com/fair-share/" />
-  <meta property="og:description" content="Demand that millionaires and giant corporations pay their fair share of taxes" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@davecolenj">
+    <meta name="twitter:title" content="Paying your fair share">
+    <meta name="twitter:description" content="Demand that millionaires and giant corporations pay their fair share of taxes">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://coleforcongress.com/fair-share/" />
+    <meta property="og:description" content="Demand that millionaires and giant corporations pay their fair share of taxes" />
 ---
+
 
 ## Thank you!
 
@@ -23,5 +25,5 @@ We can get our economy back on track and require that millionaires to pay their 
   
 Once you’ve shared, help our campaign push this even further with a donation of $5 or more:
 
-<a  style="font-weight:bold;background: #f93348;color: white;float:none;display: inline-block;padding: 20px;-webkit-transition:background-color 0.2s, color 0.2s;  -moz-transition: background-color 0.2s, color 0.2s; -o-transition: background-color 0.2s, color 0.2s;  transition: background-color 0.2s, color 0.2s;"  href="/contribute">Contribute</a>
+<a  style="font-weight:bold;background: #f93348;color: white;float:none;display: inline-block;padding:20px;-webkit-transition:background-color 0.2s, color 0.2s;  -moz-transition: background-color 0.2s, color 0.2s; -o-transition: background-color 0.2s, color 0.2s;  transition: background-color 0.2s, color 0.2s;"  href="/contribute">Contribute</a>
 
