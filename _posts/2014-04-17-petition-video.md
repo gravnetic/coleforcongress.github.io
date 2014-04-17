@@ -26,9 +26,9 @@ We delivered a petition of over 33,000 signatures, demanding that Congress inves
 
 **Share this video with a friend or family member and remind them about the June 3rd primary vote.**
 
-<a target="_blank" href="mailto:?subject={{sharesubject}}&amp;body={{sharebody}}" class="icon mail button">Email</a>
+<a target="_blank" href="mailto:?subject={{page.sharesubject}}&amp;body={{page.sharebody}}" class="icon mail button">Email</a>
   <a href="https://www.facebook.com/sharer/sharer.php?u=http://coleforcongress.com/fresh-start-for-our-economy-video/" target="_blank" class="icon facebook button">Facebook</a>
-  <a href="https://twitter.com/intent/tweet?text={{sharesubject}}%20http://coleforcongress.com/fresh-start-for-our-economy-video/" target="_blank" class="icon twitter button">Twitter</a>
+  <a href="https://twitter.com/intent/tweet?text={{page.sharesubject}}%20http://coleforcongress.com/fresh-start-for-our-economy-video/" target="_blank" class="icon twitter button">Twitter</a>
   
 Once you’ve shared, help our campaign reach voters with a donation of $5 or more:
 
