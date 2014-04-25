@@ -16,3 +16,5 @@ head: |
 ## Tell FCC: Don’t let “pay to play” break the Internet
 
 FCC Chairman Tom Wheeler, stand up for consumers against big corporations like Comcast, AT&T, and Verizon, by rejecting a pay to play “fast lane.” The FCC should take immediate action to classify broadband Internet as a public utility, not a luxury, preserving a free and open Internet for everyone.
+
+*[Read Dave's blog post for more information](https://medium.com/politics-and-policy/989c115ea1b0).*
